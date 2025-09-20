@@ -11,7 +11,34 @@ import websockets  # pip install websockets
 import os
 import requests
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+# Configure logging to write to both console and log file with UTC timezone
+import logging.handlers
+from datetime import datetime, timezone
+
+class UTCFormatter(logging.Formatter):
+    def formatTime(self, record, datefmt=None):
+        dt = datetime.fromtimestamp(record.created, tz=timezone.utc)
+        if datefmt:
+            s = dt.strftime(datefmt)
+        else:
+            s = dt.strftime("%Y-%m-%d %H:%M:%S")
+            s = "%s,%03d" % (s, record.msecs)
+        return s
+
+# Set up logging with UTC timezone
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(message)s",
+    handlers=[
+        logging.FileHandler("collector.log"),
+        logging.StreamHandler()
+    ]
+)
+
+# Apply UTC formatter to all handlers
+utc_formatter = UTCFormatter("%(asctime)s %(levelname)s %(message)s")
+for handler in logging.root.handlers:
+    handler.setFormatter(utc_formatter)
 
 # ---------- Config ----------
 BINANCE_FUTURES_WS_BASE = "wss://fstream.binance.com"
