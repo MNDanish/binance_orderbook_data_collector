@@ -1,0 +1,3978 @@
+{
+	"BTC": {
+		"BINANCE": "BTCUSDT",
+		"BYBIT": "BTCUSDT",
+		"OKX": "BTC-USDT-SWAP",
+		"BINGX": "BTC-USDT",
+		"BITGET": "BTCUSDT",
+		"HYPERLIQUID": "BTC"
+	},
+	"ETH": {
+		"BINANCE": "ETHUSDT",
+		"BYBIT": "ETHUSDT",
+		"OKX": "ETH-USDT-SWAP",
+		"BINGX": "ETH-USDT",
+		"BITGET": "ETHUSDT",
+		"HYPERLIQUID": "ETH"
+	},
+	"XRP": {
+		"BINANCE": "XRPUSDT",
+		"BYBIT": "XRPUSDT",
+		"OKX": "XRP-USDT-SWAP",
+		"BINGX": "XRP-USDT",
+		"BITGET": "XRPUSDT",
+		"HYPERLIQUID": "XRP"
+	},
+	"SOL": {
+		"BINANCE": "SOLUSDT",
+		"BYBIT": "SOLUSDT",
+		"OKX": "SOL-USDT-SWAP",
+		"BINGX": "SOL-USDT",
+		"BITGET": "SOLUSDT",
+		"HYPERLIQUID": "SOL"
+	},
+	"BCH": {
+		"BINANCE": "BCHUSDT",
+		"BYBIT": "BCHUSDT",
+		"OKX": "BCH-USDT-SWAP",
+		"BINGX": "BCH-USDT",
+		"BITGET": "BCHUSDT",
+		"HYPERLIQUID": "BCH"
+	},
+	"BNB": {
+		"BINANCE": "BNBUSDT",
+		"BYBIT": "BNBUSDT",
+		"OKX": "BNB-USDT-SWAP",
+		"BINGX": "BNB-USDT",
+		"BITGET": "BNBUSDT",
+		"HYPERLIQUID": "BNB"
+	},
+	"LTC": {
+		"BINANCE": "LTCUSDT",
+		"BYBIT": "LTCUSDT",
+		"OKX": "LTC-USDT-SWAP",
+		"BINGX": "LTC-USDT",
+		"BITGET": "LTCUSDT",
+		"HYPERLIQUID": "LTC"
+	},
+	"LINK": {
+		"BINANCE": "LINKUSDT",
+		"BYBIT": "LINKUSDT",
+		"OKX": "LINK-USDT-SWAP",
+		"BINGX": "LINK-USDT",
+		"BITGET": "LINKUSDT",
+		"HYPERLIQUID": "LINK"
+	},
+	"1000FLOKI": {
+		"BINANCE": "1000FLOKIUSDT",
+		"BYBIT": "1000FLOKIUSDT",
+		"OKX": "FLOKI-USDT-SWAP",
+		"BINGX": "FLOKI-USDT",
+		"BITGET": "FLOKIUSDT",
+		"HYPERLIQUID": "kFLOKI"
+	},
+	"TRB": {
+		"BINANCE": "TRBUSDT",
+		"BYBIT": "TRBUSDT",
+		"OKX": "TRB-USDT-SWAP",
+		"BINGX": "TRB-USDT",
+		"BITGET": "TRBUSDT",
+		"HYPERLIQUID": "TRB"
+	},
+	"WLD": {
+		"BINANCE": "WLDUSDT",
+		"BYBIT": "WLDUSDT",
+		"OKX": "WLD-USDT-SWAP",
+		"BINGX": "WLD-USDT",
+		"BITGET": "WLDUSDT",
+		"HYPERLIQUID": "WLD"
+	},
+	"CYBER": {
+		"BINANCE": "CYBERUSDT",
+		"BYBIT": "CYBERUSDT",
+		"OKX": false,
+		"BINGX": "CYBER-USDT",
+		"BITGET": "CYBERUSDT",
+		"HYPERLIQUID": false
+	},
+	"ARK": {
+		"BINANCE": "ARKUSDT",
+		"BYBIT": "ARKUSDT",
+		"OKX": false,
+		"BINGX": "ARK-USDT",
+		"BITGET": "ARKUSDT",
+		"HYPERLIQUID": "ARK"
+	},
+	"STORJ": {
+		"BINANCE": "STORJUSDT",
+		"BYBIT": "STORJUSDT",
+		"OKX": "STORJ-USDT-SWAP",
+		"BINGX": "STORJ-USDT",
+		"BITGET": "STORJUSDT",
+		"HYPERLIQUID": false
+	},
+	"DOGE": {
+		"BINANCE": "DOGEUSDT",
+		"BYBIT": "DOGEUSDT",
+		"OKX": "DOGE-USDT-SWAP",
+		"BINGX": "DOGE-USDT",
+		"BITGET": "DOGEUSDT",
+		"HYPERLIQUID": "DOGE"
+	},
+	"SPELL": {
+		"BINANCE": "SPELLUSDT",
+		"BYBIT": "SPELLUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "SPELLUSDT",
+		"HYPERLIQUID": false
+	},
+	"HIFI": {
+		"BINANCE": "HIFIUSDT",
+		"BYBIT": "HIFIUSDT",
+		"OKX": false,
+		"BINGX": "HIFI-USDT",
+		"BITGET": "HIFIUSDT",
+		"HYPERLIQUID": false
+	},
+	"OP": {
+		"BINANCE": "OPUSDT",
+		"BYBIT": "OPUSDT",
+		"OKX": "OP-USDT-SWAP",
+		"BINGX": "OP-USDT",
+		"BITGET": "OPUSDT",
+		"HYPERLIQUID": "OP"
+	},
+	"ARB": {
+		"BINANCE": "ARBUSDT",
+		"BYBIT": "ARBUSDT",
+		"OKX": "ARB-USDT-SWAP",
+		"BINGX": "ARB-USDT",
+		"BITGET": "ARBUSDT",
+		"HYPERLIQUID": "ARB"
+	},
+	"APE": {
+		"BINANCE": "APEUSDT",
+		"BYBIT": "APEUSDT",
+		"OKX": "APE-USDT-SWAP",
+		"BINGX": "APE-USDT",
+		"BITGET": "APEUSDT",
+		"HYPERLIQUID": "APE"
+	},
+	"RUNE": {
+		"BINANCE": "RUNEUSDT",
+		"BYBIT": "RUNEUSDT",
+		"OKX": false,
+		"BINGX": "RUNE-USDT",
+		"BITGET": "RUNEUSDT",
+		"HYPERLIQUID": "RUNE"
+	},
+	"PERP": {
+		"BINANCE": "PERPUSDT",
+		"BYBIT": "PERPUSDT",
+		"OKX": "PERP-USDT-SWAP",
+		"BINGX": "PERP-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"ADA": {
+		"BINANCE": "ADAUSDT",
+		"BYBIT": "ADAUSDT",
+		"OKX": "ADA-USDT-SWAP",
+		"BINGX": "ADA-USDT",
+		"BITGET": "ADAUSDT",
+		"HYPERLIQUID": "ADA"
+	},
+	"CRV": {
+		"BINANCE": "CRVUSDT",
+		"BYBIT": "CRVUSDT",
+		"OKX": "CRV-USDT-SWAP",
+		"BINGX": "CRV-USDT",
+		"BITGET": "CRVUSDT",
+		"HYPERLIQUID": "CRV"
+	},
+	"CFX": {
+		"BINANCE": "CFXUSDT",
+		"BYBIT": "CFXUSDT",
+		"OKX": "CFX-USDT-SWAP",
+		"BINGX": "CFX-USDT",
+		"BITGET": "CFXUSDT",
+		"HYPERLIQUID": "CFX"
+	},
+	"1000PEPE": {
+		"BINANCE": "1000PEPEUSDT",
+		"BYBIT": "1000PEPEUSDT",
+		"OKX": "PEPE-USDT-SWAP",
+		"BINGX": "1000PEPE-USDT",
+		"BITGET": "PEPEUSDT",
+		"HYPERLIQUID": "kPEPE"
+	},
+	"AVAX": {
+		"BINANCE": "AVAXUSDT",
+		"BYBIT": "AVAXUSDT",
+		"OKX": "AVAX-USDT-SWAP",
+		"BINGX": "AVAX-USDT",
+		"BITGET": "AVAXUSDT",
+		"HYPERLIQUID": "AVAX"
+	},
+	"SXP": {
+		"BINANCE": "SXPUSDT",
+		"BYBIT": "SXPUSDT",
+		"OKX": false,
+		"BINGX": "SXP-USDT",
+		"BITGET": "SXPUSDT",
+		"HYPERLIQUID": false
+	},
+	"BAKE": {
+		"BINANCE": "BAKEUSDT",
+		"BYBIT": "BAKEUSDT",
+		"OKX": false,
+		"BINGX": "BAKE-USDT",
+		"BITGET": "BAKEUSDT",
+		"HYPERLIQUID": false
+	},
+	"1000SHIB": {
+		"BINANCE": "1000SHIBUSDT",
+		"BYBIT": "SHIB1000USDT",
+		"OKX": "SHIB-USDT-SWAP",
+		"BINGX": "SHIB-USDT",
+		"BITGET": "SHIBUSDT",
+		"HYPERLIQUID": "kSHIB"
+	},
+	"MTL": {
+		"BINANCE": "MTLUSDT",
+		"BYBIT": "MTLUSDT",
+		"OKX": false,
+		"BINGX": "MTL-USDT",
+		"BITGET": "MTLUSDT",
+		"HYPERLIQUID": false
+	},
+	"YGG": {
+		"BINANCE": "YGGUSDT",
+		"BYBIT": "YGGUSDT",
+		"OKX": "YGG-USDT-SWAP",
+		"BINGX": "YGG-USDT",
+		"BITGET": "YGGUSDT",
+		"HYPERLIQUID": "YGG"
+	},
+	"FIL": {
+		"BINANCE": "FILUSDT",
+		"BYBIT": "FILUSDT",
+		"OKX": "FIL-USDT-SWAP",
+		"BINGX": "FIL-USDT",
+		"BITGET": "FILUSDT",
+		"HYPERLIQUID": "FIL"
+	},
+	"GALA": {
+		"BINANCE": "GALAUSDT",
+		"BYBIT": "GALAUSDT",
+		"OKX": "GALA-USDT-SWAP",
+		"BINGX": "GALA-USDT",
+		"BITGET": "GALAUSDT",
+		"HYPERLIQUID": "GALA"
+	},
+	"SUI": {
+		"BINANCE": "SUIUSDT",
+		"BYBIT": "SUIUSDT",
+		"OKX": "SUI-USDT-SWAP",
+		"BINGX": "SUI-USDT",
+		"BITGET": "SUIUSDT",
+		"HYPERLIQUID": "SUI"
+	},
+	"AAVE": {
+		"BINANCE": "AAVEUSDT",
+		"BYBIT": "AAVEUSDT",
+		"OKX": "AAVE-USDT-SWAP",
+		"BINGX": "AAVE-USDT",
+		"BITGET": "AAVEUSDT",
+		"HYPERLIQUID": "AAVE"
+	},
+	"DOT": {
+		"BINANCE": "DOTUSDT",
+		"BYBIT": "DOTUSDT",
+		"OKX": "DOT-USDT-SWAP",
+		"BINGX": "DOT-USDT",
+		"BITGET": "DOTUSDT",
+		"HYPERLIQUID": "DOT"
+	},
+	"API3": {
+		"BINANCE": "API3USDT",
+		"BYBIT": "API3USDT",
+		"OKX": "API3-USDT-SWAP",
+		"BINGX": "API3-USDT",
+		"BITGET": "API3USDT",
+		"HYPERLIQUID": false
+	},
+	"ETC": {
+		"BINANCE": "ETCUSDT",
+		"BYBIT": "ETCUSDT",
+		"OKX": "ETC-USDT-SWAP",
+		"BINGX": "ETC-USDT",
+		"BITGET": "ETCUSDT",
+		"HYPERLIQUID": "ETC"
+	},
+	"OGN": {
+		"BINANCE": "OGNUSDT",
+		"BYBIT": "OGNUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "OGNUSDT",
+		"HYPERLIQUID": "OGN"
+	},
+	"FLM": {
+		"BINANCE": "FLMUSDT",
+		"BYBIT": "FLMUSDT",
+		"OKX": "FLM-USDT-SWAP",
+		"BINGX": "FLM-USDT",
+		"BITGET": "FLMUSDT",
+		"HYPERLIQUID": false
+	},
+	"KNC": {
+		"BINANCE": "KNCUSDT",
+		"BYBIT": "KNCUSDT",
+		"OKX": false,
+		"BINGX": "KNC-USDT",
+		"BITGET": "KNCUSDT",
+		"HYPERLIQUID": false
+	},
+	"ATOM": {
+		"BINANCE": "ATOMUSDT",
+		"BYBIT": "ATOMUSDT",
+		"OKX": "ATOM-USDT-SWAP",
+		"BINGX": "ATOM-USDT",
+		"BITGET": "ATOMUSDT",
+		"HYPERLIQUID": "ATOM"
+	},
+	"AXS": {
+		"BINANCE": "AXSUSDT",
+		"BYBIT": "AXSUSDT",
+		"OKX": "AXS-USDT-SWAP",
+		"BINGX": "AXS-USDT",
+		"BITGET": "AXSUSDT",
+		"HYPERLIQUID": false
+	},
+	"DYDX": {
+		"BINANCE": "DYDXUSDT",
+		"BYBIT": "DYDXUSDT",
+		"OKX": "DYDX-USDT-SWAP",
+		"BINGX": "DYDX-USDT",
+		"BITGET": "DYDXUSDT",
+		"HYPERLIQUID": "DYDX"
+	},
+	"APT": {
+		"BINANCE": "APTUSDT",
+		"BYBIT": "APTUSDT",
+		"OKX": "APT-USDT-SWAP",
+		"BINGX": "APT-USDT",
+		"BITGET": "APTUSDT",
+		"HYPERLIQUID": "APT"
+	},
+	"SEI": {
+		"BINANCE": "SEIUSDT",
+		"BYBIT": "SEIUSDT",
+		"OKX": false,
+		"BINGX": "SEI-USDT",
+		"BITGET": "SEIUSDT",
+		"HYPERLIQUID": "SEI"
+	},
+	"XLM": {
+		"BINANCE": "XLMUSDT",
+		"BYBIT": "XLMUSDT",
+		"OKX": "XLM-USDT-SWAP",
+		"BINGX": "XLM-USDT",
+		"BITGET": "XLMUSDT",
+		"HYPERLIQUID": "XLM"
+	},
+	"NTRN": {
+		"BINANCE": "NTRNUSDT",
+		"BYBIT": "NTRNUSDT",
+		"OKX": false,
+		"BINGX": "NTRN-USDT",
+		"BITGET": "NTRNUSDT",
+		"HYPERLIQUID": false
+	},
+	"SNX": {
+		"BINANCE": "SNXUSDT",
+		"BYBIT": "SNXUSDT",
+		"OKX": "SNX-USDT-SWAP",
+		"BINGX": "SNX-USDT",
+		"BITGET": "SNXUSDT",
+		"HYPERLIQUID": "SNX"
+	},
+	"NEAR": {
+		"BINANCE": "NEARUSDT",
+		"BYBIT": "NEARUSDT",
+		"OKX": "NEAR-USDT-SWAP",
+		"BINGX": "NEAR-USDT",
+		"BITGET": "NEARUSDT",
+		"HYPERLIQUID": "NEAR"
+	},
+	"INJ": {
+		"BINANCE": "INJUSDT",
+		"BYBIT": "INJUSDT",
+		"OKX": "INJ-USDT-SWAP",
+		"BINGX": "INJ-USDT",
+		"BITGET": "INJUSDT",
+		"HYPERLIQUID": "INJ"
+	},
+	"COMP": {
+		"BINANCE": "COMPUSDT",
+		"BYBIT": "COMPUSDT",
+		"OKX": "COMP-USDT-SWAP",
+		"BINGX": "COMP-USDT",
+		"BITGET": "COMPUSDT",
+		"HYPERLIQUID": "COMP"
+	},
+	"SAND": {
+		"BINANCE": "SANDUSDT",
+		"BYBIT": "SANDUSDT",
+		"OKX": "SAND-USDT-SWAP",
+		"BINGX": "SAND-USDT",
+		"BITGET": "SANDUSDT",
+		"HYPERLIQUID": "SAND"
+	},
+	"TRX": {
+		"BINANCE": "TRXUSDT",
+		"BYBIT": "TRXUSDT",
+		"OKX": "TRX-USDT-SWAP",
+		"BINGX": "TRX-USDT",
+		"BITGET": "TRXUSDT",
+		"HYPERLIQUID": "TRX"
+	},
+	"ALGO": {
+		"BINANCE": "ALGOUSDT",
+		"BYBIT": "ALGOUSDT",
+		"OKX": "ALGO-USDT-SWAP",
+		"BINGX": "ALGO-USDT",
+		"BITGET": "ALGOUSDT",
+		"HYPERLIQUID": "ALGO"
+	},
+	"STX": {
+		"BINANCE": "STXUSDT",
+		"BYBIT": "STXUSDT",
+		"OKX": "STX-USDT-SWAP",
+		"BINGX": "STX-USDT",
+		"BITGET": "STXUSDT",
+		"HYPERLIQUID": "STX"
+	},
+	"OXT": {
+		"BINANCE": "OXTUSDT",
+		"BYBIT": "OXTUSDT",
+		"OKX": false,
+		"BINGX": "OXT-USDT",
+		"BITGET": "OXTUSDT",
+		"HYPERLIQUID": false
+	},
+	"MASK": {
+		"BINANCE": "MASKUSDT",
+		"BYBIT": "MASKUSDT",
+		"OKX": "MASK-USDT-SWAP",
+		"BINGX": "MASK-USDT",
+		"BITGET": "MASKUSDT",
+		"HYPERLIQUID": false
+	},
+	"1000XEC": {
+		"BINANCE": "1000XECUSDT",
+		"BYBIT": "1000XECUSDT",
+		"OKX": false,
+		"BINGX": "1000XEC-USDT",
+		"BITGET": "1000XECUSDT",
+		"HYPERLIQUID": false
+	},
+	"FET": {
+		"BINANCE": "FETUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "FET-USDT",
+		"BITGET": "FETUSDT",
+		"HYPERLIQUID": "FET"
+	},
+	"UNI": {
+		"BINANCE": "UNIUSDT",
+		"BYBIT": "UNIUSDT",
+		"OKX": "UNI-USDT-SWAP",
+		"BINGX": "UNI-USDT",
+		"BITGET": "UNIUSDT",
+		"HYPERLIQUID": "UNI"
+	},
+	"LQTY": {
+		"BINANCE": "LQTYUSDT",
+		"BYBIT": "LQTYUSDT",
+		"OKX": "LQTY-USDT-SWAP",
+		"BINGX": "LQTY-USDT",
+		"BITGET": "LQTYUSDT",
+		"HYPERLIQUID": false
+	},
+	"ARKM": {
+		"BINANCE": "ARKMUSDT",
+		"BYBIT": "ARKMUSDT",
+		"OKX": "ARKM-USDT-SWAP",
+		"BINGX": "ARKM-USDT",
+		"BITGET": "ARKMUSDT",
+		"HYPERLIQUID": false
+	},
+	"GMT": {
+		"BINANCE": "GMTUSDT",
+		"BYBIT": "GMTUSDT",
+		"OKX": "GMT-USDT-SWAP",
+		"BINGX": "GMT-USDT",
+		"BITGET": "GMTUSDT",
+		"HYPERLIQUID": "GMT"
+	},
+	"NEO": {
+		"BINANCE": "NEOUSDT",
+		"BYBIT": "NEOUSDT",
+		"OKX": "NEO-USDT-SWAP",
+		"BINGX": "NEO-USDT",
+		"BITGET": "NEOUSDT",
+		"HYPERLIQUID": "NEO"
+	},
+	"GTC": {
+		"BINANCE": "GTCUSDT",
+		"BYBIT": "GTCUSDT",
+		"OKX": false,
+		"BINGX": "GTC-USDT",
+		"BITGET": "GTCUSDT",
+		"HYPERLIQUID": false
+	},
+	"MANA": {
+		"BINANCE": "MANAUSDT",
+		"BYBIT": "MANAUSDT",
+		"OKX": "MANA-USDT-SWAP",
+		"BINGX": "MANA-USDT",
+		"BITGET": "MANAUSDT",
+		"HYPERLIQUID": false
+	},
+	"HBAR": {
+		"BINANCE": "HBARUSDT",
+		"BYBIT": "HBARUSDT",
+		"OKX": "HBAR-USDT-SWAP",
+		"BINGX": "HBAR-USDT",
+		"BITGET": "HBARUSDT",
+		"HYPERLIQUID": "HBAR"
+	},
+	"CELO": {
+		"BINANCE": "CELOUSDT",
+		"BYBIT": "CELOUSDT",
+		"OKX": "CELO-USDT-SWAP",
+		"BINGX": "CELO-USDT",
+		"BITGET": "CELOUSDT",
+		"HYPERLIQUID": "CELO"
+	},
+	"RDNT": {
+		"BINANCE": "RDNTUSDT",
+		"BYBIT": "RDNTUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "RDNTUSDT",
+		"HYPERLIQUID": false
+	},
+	"HIGH": {
+		"BINANCE": "HIGHUSDT",
+		"BYBIT": "HIGHUSDT",
+		"OKX": false,
+		"BINGX": "HIGH-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"ACH": {
+		"BINANCE": "ACHUSDT",
+		"BYBIT": "ACHUSDT",
+		"OKX": "ACH-USDT-SWAP",
+		"BINGX": "ACH-USDT",
+		"BITGET": "ACHUSDT",
+		"HYPERLIQUID": false
+	},
+	"LDO": {
+		"BINANCE": "LDOUSDT",
+		"BYBIT": "LDOUSDT",
+		"OKX": "LDO-USDT-SWAP",
+		"BINGX": "LDO-USDT",
+		"BITGET": "LDOUSDT",
+		"HYPERLIQUID": "LDO"
+	},
+	"ZK": {
+		"BINANCE": "ZKUSDT",
+		"BYBIT": "ZKUSDT",
+		"OKX": "ZK-USDT-SWAP",
+		"BINGX": "ZK-USDT",
+		"BITGET": "ZKUSDT",
+		"HYPERLIQUID": "ZK"
+	},
+	"IMX": {
+		"BINANCE": "IMXUSDT",
+		"BYBIT": "IMXUSDT",
+		"OKX": "IMX-USDT-SWAP",
+		"BINGX": "IMX-USDT",
+		"BITGET": "IMXUSDT",
+		"HYPERLIQUID": "IMX"
+	},
+	"ENJ": {
+		"BINANCE": "ENJUSDT",
+		"BYBIT": "ENJUSDT",
+		"OKX": "ENJ-USDT-SWAP",
+		"BINGX": "ENJ-USDT",
+		"BITGET": "ENJUSDT",
+		"HYPERLIQUID": false
+	},
+	"CHR": {
+		"BINANCE": "CHRUSDT",
+		"BYBIT": "CHRUSDT",
+		"OKX": false,
+		"BINGX": "CHR-USDT",
+		"BITGET": "CHRUSDT",
+		"HYPERLIQUID": false
+	},
+	"ID": {
+		"BINANCE": "IDUSDT",
+		"BYBIT": "IDUSDT",
+		"OKX": false,
+		"BINGX": "ID-USDT",
+		"BITGET": "IDUSDT",
+		"HYPERLIQUID": false
+	},
+	"LPT": {
+		"BINANCE": "LPTUSDT",
+		"BYBIT": "LPTUSDT",
+		"OKX": "LPT-USDT-SWAP",
+		"BINGX": "LPT-USDT",
+		"BITGET": "LPTUSDT",
+		"HYPERLIQUID": false
+	},
+	"AGLD": {
+		"BINANCE": "AGLDUSDT",
+		"BYBIT": "AGLDUSDT",
+		"OKX": "AGLD-USDT-SWAP",
+		"BINGX": "AGLD-USDT",
+		"BITGET": "AGLDUSDT",
+		"HYPERLIQUID": false
+	},
+	"THETA": {
+		"BINANCE": "THETAUSDT",
+		"BYBIT": "THETAUSDT",
+		"OKX": "THETA-USDT-SWAP",
+		"BINGX": "THETA-USDT",
+		"BITGET": "THETAUSDT",
+		"HYPERLIQUID": false
+	},
+	"ROSE": {
+		"BINANCE": "ROSEUSDT",
+		"BYBIT": "ROSEUSDT",
+		"OKX": false,
+		"BINGX": "ROSE-USDT",
+		"BITGET": "ROSEUSDT",
+		"HYPERLIQUID": false
+	},
+	"TA": {
+		"BINANCE": "TAUSDT",
+		"BYBIT": "TAUSDT",
+		"OKX": false,
+		"BINGX": "TA-USDT",
+		"BITGET": "TAUSDT",
+		"HYPERLIQUID": false
+	},
+	"C98": {
+		"BINANCE": "C98USDT",
+		"BYBIT": "C98USDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "C98USDT",
+		"HYPERLIQUID": false
+	},
+	"GRT": {
+		"BINANCE": "GRTUSDT",
+		"BYBIT": "GRTUSDT",
+		"OKX": "GRT-USDT-SWAP",
+		"BINGX": "GRT-USDT",
+		"BITGET": "GRTUSDT",
+		"HYPERLIQUID": false
+	},
+	"TRU": {
+		"BINANCE": "TRUUSDT",
+		"BYBIT": "TRUUSDT",
+		"OKX": false,
+		"BINGX": "TRU-USDT",
+		"BITGET": "TRUUSDT",
+		"HYPERLIQUID": false
+	},
+	"ANKR": {
+		"BINANCE": "ANKRUSDT",
+		"BYBIT": "ANKRUSDT",
+		"OKX": false,
+		"BINGX": "ANKR-USDT",
+		"BITGET": "ANKRUSDT",
+		"HYPERLIQUID": false
+	},
+	"XVS": {
+		"BINANCE": "XVSUSDT",
+		"BYBIT": "XVSUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "XVSUSDT",
+		"HYPERLIQUID": false
+	},
+	"KAVA": {
+		"BINANCE": "KAVAUSDT",
+		"BYBIT": "KAVAUSDT",
+		"OKX": false,
+		"BINGX": "KAVA-USDT",
+		"BITGET": "KAVAUSDT",
+		"HYPERLIQUID": false
+	},
+	"MAGIC": {
+		"BINANCE": "MAGICUSDT",
+		"BYBIT": "MAGICUSDT",
+		"OKX": "MAGIC-USDT-SWAP",
+		"BINGX": "MAGIC-USDT",
+		"BITGET": "MAGICUSDT",
+		"HYPERLIQUID": false
+	},
+	"ASTR": {
+		"BINANCE": "ASTRUSDT",
+		"BYBIT": "ASTRUSDT",
+		"OKX": false,
+		"BINGX": "ASTR-USDT",
+		"BITGET": "ASTRUSDT",
+		"HYPERLIQUID": false
+	},
+	"XMR": {
+		"BINANCE": "XMRUSDT",
+		"BYBIT": "XMRUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"PEOPLE": {
+		"BINANCE": "PEOPLEUSDT",
+		"BYBIT": "PEOPLEUSDT",
+		"OKX": "PEOPLE-USDT-SWAP",
+		"BINGX": "PEOPLE-USDT",
+		"BITGET": "PEOPLEUSDT",
+		"HYPERLIQUID": "PEOPLE"
+	},
+	"SUSHI": {
+		"BINANCE": "SUSHIUSDT",
+		"BYBIT": "SUSHIUSDT",
+		"OKX": "SUSHI-USDT-SWAP",
+		"BINGX": "SUSHI-USDT",
+		"BITGET": "SUSHIUSDT",
+		"HYPERLIQUID": "SUSHI"
+	},
+	"HOOK": {
+		"BINANCE": "HOOKUSDT",
+		"BYBIT": "HOOKUSDT",
+		"OKX": false,
+		"BINGX": "HOOK-USDT",
+		"BITGET": "HOOKUSDT",
+		"HYPERLIQUID": false
+	},
+	"NMR": {
+		"BINANCE": "NMRUSDT",
+		"BYBIT": "NMRUSDT",
+		"OKX": "NMR-USDT-SWAP",
+		"BINGX": "NMR-USDT",
+		"BITGET": "NMRUSDT",
+		"HYPERLIQUID": false
+	},
+	"SFP": {
+		"BINANCE": "SFPUSDT",
+		"BYBIT": "SFPUSDT",
+		"OKX": false,
+		"BINGX": "SFP-USDT",
+		"BITGET": "SFPUSDT",
+		"HYPERLIQUID": false
+	},
+	"VET": {
+		"BINANCE": "VETUSDT",
+		"BYBIT": "VETUSDT",
+		"OKX": false,
+		"BINGX": "VET-USDT",
+		"BITGET": "VETUSDT",
+		"HYPERLIQUID": false
+	},
+	"ICP": {
+		"BINANCE": "ICPUSDT",
+		"BYBIT": "ICPUSDT",
+		"OKX": "ICP-USDT-SWAP",
+		"BINGX": "ICP-USDT",
+		"BITGET": "ICPUSDT",
+		"HYPERLIQUID": false
+	},
+	"PENDLE": {
+		"BINANCE": "PENDLEUSDT",
+		"BYBIT": "PENDLEUSDT",
+		"OKX": "PENDLE-USDT-SWAP",
+		"BINGX": "PENDLE-USDT",
+		"BITGET": "PENDLEUSDT",
+		"HYPERLIQUID": "PENDLE"
+	},
+	"CHZ": {
+		"BINANCE": "CHZUSDT",
+		"BYBIT": "CHZUSDT",
+		"OKX": "CHZ-USDT-SWAP",
+		"BINGX": "CHZ-USDT",
+		"BITGET": "CHZUSDT",
+		"HYPERLIQUID": false
+	},
+	"FLOW": {
+		"BINANCE": "FLOWUSDT",
+		"BYBIT": "FLOWUSDT",
+		"OKX": "FLOW-USDT-SWAP",
+		"BINGX": "FLOW-USDT",
+		"BITGET": "FLOWUSDT",
+		"HYPERLIQUID": false
+	},
+	"ARPA": {
+		"BINANCE": "ARPAUSDT",
+		"BYBIT": "ARPAUSDT",
+		"OKX": false,
+		"BINGX": "ARPA-USDT",
+		"BITGET": "ARPAUSDT",
+		"HYPERLIQUID": false
+	},
+	"SCR": {
+		"BINANCE": "SCRUSDT",
+		"BYBIT": "SCRUSDT",
+		"OKX": "SCR-USDT-SWAP",
+		"BINGX": "SCR-USDT",
+		"BITGET": "SCRUSDT",
+		"HYPERLIQUID": "SCR"
+	},
+	"SSV": {
+		"BINANCE": "SSVUSDT",
+		"BYBIT": "SSVUSDT",
+		"OKX": "SSV-USDT-SWAP",
+		"BINGX": "SSV-USDT",
+		"BITGET": "SSVUSDT",
+		"HYPERLIQUID": false
+	},
+	"WOO": {
+		"BINANCE": "WOOUSDT",
+		"BYBIT": "WOOUSDT",
+		"OKX": "WOO-USDT-SWAP",
+		"BINGX": "WOO-USDT",
+		"BITGET": "WOOUSDT",
+		"HYPERLIQUID": false
+	},
+	"ZEC": {
+		"BINANCE": "ZECUSDT",
+		"BYBIT": "ZECUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"BLUR": {
+		"BINANCE": "BLURUSDT",
+		"BYBIT": "BLURUSDT",
+		"OKX": "BLUR-USDT-SWAP",
+		"BINGX": "BLUR-USDT",
+		"BITGET": "BLURUSDT",
+		"HYPERLIQUID": "BLUR"
+	},
+	"MAV": {
+		"BINANCE": "MAVUSDT",
+		"BYBIT": "MAVUSDT",
+		"OKX": false,
+		"BINGX": "MAV-USDT",
+		"BITGET": "MAVUSDT",
+		"HYPERLIQUID": "MAV"
+	},
+	"ATA": {
+		"BINANCE": "ATAUSDT",
+		"BYBIT": "ATAUSDT",
+		"OKX": false,
+		"BINGX": "ATA-USDT",
+		"BITGET": "ATAUSDT",
+		"HYPERLIQUID": false
+	},
+	"BAND": {
+		"BINANCE": "BANDUSDT",
+		"BYBIT": "BANDUSDT",
+		"OKX": "BAND-USDT-SWAP",
+		"BINGX": false,
+		"BITGET": "BANDUSDT",
+		"HYPERLIQUID": false
+	},
+	"EGLD": {
+		"BINANCE": "EGLDUSDT",
+		"BYBIT": "EGLDUSDT",
+		"OKX": "EGLD-USDT-SWAP",
+		"BINGX": "EGLD-USDT",
+		"BITGET": "EGLDUSDT",
+		"HYPERLIQUID": false
+	},
+	"XTZ": {
+		"BINANCE": "XTZUSDT",
+		"BYBIT": "XTZUSDT",
+		"OKX": "XTZ-USDT-SWAP",
+		"BINGX": false,
+		"BITGET": "XTZUSDT",
+		"HYPERLIQUID": false
+	},
+	"GMX": {
+		"BINANCE": "GMXUSDT",
+		"BYBIT": "GMXUSDT",
+		"OKX": "GMX-USDT-SWAP",
+		"BINGX": "GMX-USDT",
+		"BITGET": "GMXUSDT",
+		"HYPERLIQUID": "GMX"
+	},
+	"ICX": {
+		"BINANCE": "ICXUSDT",
+		"BYBIT": "ICXUSDT",
+		"OKX": "ICX-USDT-SWAP",
+		"BINGX": "ICX-USDT",
+		"BITGET": "ICXUSDT",
+		"HYPERLIQUID": false
+	},
+	"JOE": {
+		"BINANCE": "JOEUSDT",
+		"BYBIT": "JOEUSDT",
+		"OKX": "JOE-USDT-SWAP",
+		"BINGX": "JOE-USDT",
+		"BITGET": "JOEUSDT",
+		"HYPERLIQUID": false
+	},
+	"ZRX": {
+		"BINANCE": "ZRXUSDT",
+		"BYBIT": "ZRXUSDT",
+		"OKX": "ZRX-USDT-SWAP",
+		"BINGX": "ZRX-USDT",
+		"BITGET": "ZRXUSDT",
+		"HYPERLIQUID": false
+	},
+	"AI": {
+		"BINANCE": "AIUSDT",
+		"BYBIT": "AIUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "AIUSDT",
+		"HYPERLIQUID": "AI"
+	},
+	"WIF": {
+		"BINANCE": "WIFUSDT",
+		"BYBIT": "WIFUSDT",
+		"OKX": "WIF-USDT-SWAP",
+		"BINGX": "WIF-USDT",
+		"BITGET": "WIFUSDT",
+		"HYPERLIQUID": "WIF"
+	},
+	"CELR": {
+		"BINANCE": "CELRUSDT",
+		"BYBIT": "CELRUSDT",
+		"OKX": false,
+		"BINGX": "CELR-USDT",
+		"BITGET": "CELRUSDT",
+		"HYPERLIQUID": false
+	},
+	"ZIL": {
+		"BINANCE": "ZILUSDT",
+		"BYBIT": "ZILUSDT",
+		"OKX": "ZIL-USDT-SWAP",
+		"BINGX": "ZIL-USDT",
+		"BITGET": "ZILUSDT",
+		"HYPERLIQUID": false
+	},
+	"IOTA": {
+		"BINANCE": "IOTAUSDT",
+		"BYBIT": "IOTAUSDT",
+		"OKX": "IOTA-USDT-SWAP",
+		"BINGX": "IOTA-USDT",
+		"BITGET": "IOTAUSDT",
+		"HYPERLIQUID": "IOTA"
+	},
+	"DUSK": {
+		"BINANCE": "DUSKUSDT",
+		"BYBIT": "DUSKUSDT",
+		"OKX": false,
+		"BINGX": "DUSK-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"XVG": {
+		"BINANCE": "XVGUSDT",
+		"BYBIT": "XVGUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "XVGUSDT",
+		"HYPERLIQUID": false
+	},
+	"AR": {
+		"BINANCE": "ARUSDT",
+		"BYBIT": "ARUSDT",
+		"OKX": "AR-USDT-SWAP",
+		"BINGX": "AR-USDT",
+		"BITGET": "ARUSDT",
+		"HYPERLIQUID": "AR"
+	},
+	"1INCH": {
+		"BINANCE": "1INCHUSDT",
+		"BYBIT": "1INCHUSDT",
+		"OKX": "1INCH-USDT-SWAP",
+		"BINGX": "1INCH-USDT",
+		"BITGET": "1INCHUSDT",
+		"HYPERLIQUID": false
+	},
+	"ONT": {
+		"BINANCE": "ONTUSDT",
+		"BYBIT": "ONTUSDT",
+		"OKX": "ONT-USDT-SWAP",
+		"BINGX": "ONT-USDT",
+		"BITGET": "ONTUSDT",
+		"HYPERLIQUID": false
+	},
+	"1000LUNC": {
+		"BINANCE": "1000LUNCUSDT",
+		"BYBIT": "1000LUNCUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "LUNCUSDT",
+		"HYPERLIQUID": "kLUNC"
+	},
+	"FXS": {
+		"BINANCE": "FXSUSDT",
+		"BYBIT": "FXSUSDT",
+		"OKX": "FXS-USDT-SWAP",
+		"BINGX": "FXS-USDT",
+		"BITGET": "FXSUSDT",
+		"HYPERLIQUID": "FXS"
+	},
+	"QTUM": {
+		"BINANCE": "QTUMUSDT",
+		"BYBIT": "QTUMUSDT",
+		"OKX": "QTUM-USDT-SWAP",
+		"BINGX": "QTUM-USDT",
+		"BITGET": "QTUMUSDT",
+		"HYPERLIQUID": false
+	},
+	"ZETA": {
+		"BINANCE": "ZETAUSDT",
+		"BYBIT": "ZETAUSDT",
+		"OKX": "ZETA-USDT-SWAP",
+		"BINGX": "ZETA-USDT",
+		"BITGET": "ZETAUSDT",
+		"HYPERLIQUID": "ZETA"
+	},
+	"YFI": {
+		"BINANCE": "YFIUSDT",
+		"BYBIT": "YFIUSDT",
+		"OKX": "YFI-USDT-SWAP",
+		"BINGX": "YFI-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"EDU": {
+		"BINANCE": "EDUUSDT",
+		"BYBIT": "EDUUSDT",
+		"OKX": false,
+		"BINGX": "EDU-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"BEL": {
+		"BINANCE": "BELUSDT",
+		"BYBIT": "BELUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "BELUSDT",
+		"HYPERLIQUID": false
+	},
+	"LUNA2": {
+		"BINANCE": "LUNA2USDT",
+		"BYBIT": "LUNA2USDT",
+		"OKX": "LUNA-USDT-SWAP",
+		"BINGX": "LUNA-USDT",
+		"BITGET": "LUNAUSDT",
+		"HYPERLIQUID": false
+	},
+	"JASMY": {
+		"BINANCE": "JASMYUSDT",
+		"BYBIT": "JASMYUSDT",
+		"OKX": false,
+		"BINGX": "JASMY-USDT",
+		"BITGET": "JASMYUSDT",
+		"HYPERLIQUID": false
+	},
+	"ONE": {
+		"BINANCE": "ONEUSDT",
+		"BYBIT": "ONEUSDT",
+		"OKX": "ONE-USDT-SWAP",
+		"BINGX": "ONE-USDT",
+		"BITGET": "ONEUSDT",
+		"HYPERLIQUID": false
+	},
+	"CTSI": {
+		"BINANCE": "CTSIUSDT",
+		"BYBIT": "CTSIUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "CTSIUSDT",
+		"HYPERLIQUID": false
+	},
+	"ALPHA": {
+		"BINANCE": "ALPHAUSDT",
+		"BYBIT": "ALPHAUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "ALPHAUSDT",
+		"HYPERLIQUID": false
+	},
+	"STG": {
+		"BINANCE": "STGUSDT",
+		"BYBIT": "STGUSDT",
+		"OKX": false,
+		"BINGX": "STG-USDT",
+		"BITGET": "STGUSDT",
+		"HYPERLIQUID": "STG"
+	},
+	"RSR": {
+		"BINANCE": "RSRUSDT",
+		"BYBIT": "RSRUSDT",
+		"OKX": "RSR-USDT-SWAP",
+		"BINGX": "RSR-USDT",
+		"BITGET": "RSRUSDT",
+		"HYPERLIQUID": "RSR"
+	},
+	"SKL": {
+		"BINANCE": "SKLUSDT",
+		"BYBIT": "SKLUSDT",
+		"OKX": false,
+		"BINGX": "SKL-USDT",
+		"BITGET": "SKLUSDT",
+		"HYPERLIQUID": false
+	},
+	"BICO": {
+		"BINANCE": "BICOUSDT",
+		"BYBIT": "BICOUSDT",
+		"OKX": "BICO-USDT-SWAP",
+		"BINGX": false,
+		"BITGET": "BICOUSDT",
+		"HYPERLIQUID": false
+	},
+	"WAXP": {
+		"BINANCE": "WAXPUSDT",
+		"BYBIT": "WAXPUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "WAXPUSDT",
+		"HYPERLIQUID": false
+	},
+	"RLC": {
+		"BINANCE": "RLCUSDT",
+		"BYBIT": "RLCUSDT",
+		"OKX": false,
+		"BINGX": "RLC-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"W": {
+		"BINANCE": "WUSDT",
+		"BYBIT": "WUSDT",
+		"OKX": "W-USDT-SWAP",
+		"BINGX": "W-USDT",
+		"BITGET": "WUSDT",
+		"HYPERLIQUID": "W"
+	},
+	"T": {
+		"BINANCE": "TUSDT",
+		"BYBIT": "TUSDT",
+		"OKX": "T-USDT-SWAP",
+		"BINGX": false,
+		"BITGET": "TUSDT",
+		"HYPERLIQUID": false
+	},
+	"PHB": {
+		"BINANCE": "PHBUSDT",
+		"BYBIT": "PHBUSDT",
+		"OKX": false,
+		"BINGX": "PHB-USDT",
+		"BITGET": "PHBUSDT",
+		"HYPERLIQUID": false
+	},
+	"COTI": {
+		"BINANCE": "COTIUSDT",
+		"BYBIT": "COTIUSDT",
+		"OKX": false,
+		"BINGX": "COTI-USDT",
+		"BITGET": "COTIUSDT",
+		"HYPERLIQUID": false
+	},
+	"ALICE": {
+		"BINANCE": "ALICEUSDT",
+		"BYBIT": "ALICEUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "ALICEUSDT",
+		"HYPERLIQUID": false
+	},
+	"DASH": {
+		"BINANCE": "DASHUSDT",
+		"BYBIT": "DASHUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"NKN": {
+		"BINANCE": "NKNUSDT",
+		"BYBIT": "NKNUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "NKNUSDT",
+		"HYPERLIQUID": false
+	},
+	"DENT": {
+		"BINANCE": "DENTUSDT",
+		"BYBIT": "DENTUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "DENTUSDT",
+		"HYPERLIQUID": false
+	},
+	"HOT": {
+		"BINANCE": "HOTUSDT",
+		"BYBIT": "HOTUSDT",
+		"OKX": false,
+		"BINGX": "HOT-USDT",
+		"BITGET": "HOTUSDT",
+		"HYPERLIQUID": false
+	},
+	"QNT": {
+		"BINANCE": "QNTUSDT",
+		"BYBIT": "QNTUSDT",
+		"OKX": false,
+		"BINGX": "QNT-USDT",
+		"BITGET": "QNTUSDT",
+		"HYPERLIQUID": false
+	},
+	"ZEN": {
+		"BINANCE": "ZENUSDT",
+		"BYBIT": "ZENUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "ZENUSDT",
+		"HYPERLIQUID": "ZEN"
+	},
+	"ENS": {
+		"BINANCE": "ENSUSDT",
+		"BYBIT": "ENSUSDT",
+		"OKX": "ENS-USDT-SWAP",
+		"BINGX": "ENS-USDT",
+		"BITGET": "ENSUSDT",
+		"HYPERLIQUID": "ENS"
+	},
+	"KSM": {
+		"BINANCE": "KSMUSDT",
+		"BYBIT": "KSMUSDT",
+		"OKX": "KSM-USDT-SWAP",
+		"BINGX": "KSM-USDT",
+		"BITGET": "KSMUSDT",
+		"HYPERLIQUID": false
+	},
+	"MINA": {
+		"BINANCE": "MINAUSDT",
+		"BYBIT": "MINAUSDT",
+		"OKX": "MINA-USDT-SWAP",
+		"BINGX": "MINA-USDT",
+		"BITGET": "MINAUSDT",
+		"HYPERLIQUID": "MINA"
+	},
+	"BAT": {
+		"BINANCE": "BATUSDT",
+		"BYBIT": "BATUSDT",
+		"OKX": "BAT-USDT-SWAP",
+		"BINGX": "BAT-USDT",
+		"BITGET": "BATUSDT",
+		"HYPERLIQUID": false
+	},
+	"IOTX": {
+		"BINANCE": "IOTXUSDT",
+		"BYBIT": "IOTXUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "IOTXUSDT",
+		"HYPERLIQUID": false
+	},
+	"LRC": {
+		"BINANCE": "LRCUSDT",
+		"BYBIT": "LRCUSDT",
+		"OKX": "LRC-USDT-SWAP",
+		"BINGX": "LRC-USDT",
+		"BITGET": "LRCUSDT",
+		"HYPERLIQUID": false
+	},
+	"DODOX": {
+		"BINANCE": "DODOXUSDT",
+		"BYBIT": "DODOUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"HFT": {
+		"BINANCE": "HFTUSDT",
+		"BYBIT": "HFTUSDT",
+		"OKX": false,
+		"BINGX": "HFT-USDT",
+		"BITGET": "HFTUSDT",
+		"HYPERLIQUID": false
+	},
+	"RVN": {
+		"BINANCE": "RVNUSDT",
+		"BYBIT": "RVNUSDT",
+		"OKX": "RVN-USDT-SWAP",
+		"BINGX": "RVN-USDT",
+		"BITGET": "RVNUSDT",
+		"HYPERLIQUID": false
+	},
+	"BIGTIME": {
+		"BINANCE": "BIGTIMEUSDT",
+		"BYBIT": "BIGTIMEUSDT",
+		"OKX": "BIGTIME-USDT-SWAP",
+		"BINGX": "BIGTIME-USDT",
+		"BITGET": "BIGTIMEUSDT",
+		"HYPERLIQUID": "BIGTIME"
+	},
+	"CAKE": {
+		"BINANCE": "CAKEUSDT",
+		"BYBIT": "CAKEUSDT",
+		"OKX": false,
+		"BINGX": "CAKE-USDT",
+		"BITGET": "CAKEUSDT",
+		"HYPERLIQUID": "CAKE"
+	},
+	"MEME": {
+		"BINANCE": "MEMEUSDT",
+		"BYBIT": "MEMEUSDT",
+		"OKX": "MEME-USDT-SWAP",
+		"BINGX": "MEME-USDT",
+		"BITGET": "MEMEUSDT",
+		"HYPERLIQUID": "MEME"
+	},
+	"TOKEN": {
+		"BINANCE": "TOKENUSDT",
+		"BYBIT": "TOKENUSDT",
+		"OKX": false,
+		"BINGX": "TOKEN-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"TIA": {
+		"BINANCE": "TIAUSDT",
+		"BYBIT": "TIAUSDT",
+		"OKX": "TIA-USDT-SWAP",
+		"BINGX": "TIA-USDT",
+		"BITGET": "TIAUSDT",
+		"HYPERLIQUID": "TIA"
+	},
+	"POLYX": {
+		"BINANCE": "POLYXUSDT",
+		"BYBIT": "POLYXUSDT",
+		"OKX": false,
+		"BINGX": "POLYX-USDT",
+		"BITGET": "POLYXUSDT",
+		"HYPERLIQUID": "POLYX"
+	},
+	"POWR": {
+		"BINANCE": "POWRUSDT",
+		"BYBIT": "POWRUSDT",
+		"OKX": false,
+		"BINGX": "POWR-USDT",
+		"BITGET": "POWRUSDT",
+		"HYPERLIQUID": false
+	},
+	"UMA": {
+		"BINANCE": "UMAUSDT",
+		"BYBIT": "UMAUSDT",
+		"OKX": "UMA-USDT-SWAP",
+		"BINGX": "UMA-USDT",
+		"BITGET": "UMAUSDT",
+		"HYPERLIQUID": "UMA"
+	},
+	"IOST": {
+		"BINANCE": "IOSTUSDT",
+		"BYBIT": "IOSTUSDT",
+		"OKX": "IOST-USDT-SWAP",
+		"BINGX": "IOST-USDT",
+		"BITGET": "IOSTUSDT",
+		"HYPERLIQUID": false
+	},
+	"TLM": {
+		"BINANCE": "TLMUSDT",
+		"BYBIT": "TLMUSDT",
+		"OKX": false,
+		"BINGX": "TLM-USDT",
+		"BITGET": "TLMUSDT",
+		"HYPERLIQUID": false
+	},
+	"CKB": {
+		"BINANCE": "CKBUSDT",
+		"BYBIT": "CKBUSDT",
+		"OKX": false,
+		"BINGX": "CKB-USDT",
+		"BITGET": "CKBUSDT",
+		"HYPERLIQUID": false
+	},
+	"BNT": {
+		"BINANCE": "BNTUSDT",
+		"BYBIT": "BNTUSDT",
+		"OKX": "BNT-USDT-SWAP",
+		"BINGX": "BNT-USDT",
+		"BITGET": "BNTUSDT",
+		"HYPERLIQUID": false
+	},
+	"BSV": {
+		"BINANCE": "BSVUSDT",
+		"BYBIT": "BSVUSDT",
+		"OKX": false,
+		"BINGX": "BSV-USDT",
+		"BITGET": "BSVUSDT",
+		"HYPERLIQUID": "BSV"
+	},
+	"ORDI": {
+		"BINANCE": "ORDIUSDT",
+		"BYBIT": "ORDIUSDT",
+		"OKX": "ORDI-USDT-SWAP",
+		"BINGX": "ORDI-USDT",
+		"BITGET": "ORDIUSDT",
+		"HYPERLIQUID": "ORDI"
+	},
+	"TWT": {
+		"BINANCE": "TWTUSDT",
+		"BYBIT": "TWTUSDT",
+		"OKX": false,
+		"BINGX": "TWT-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"STEEM": {
+		"BINANCE": "STEEMUSDT",
+		"BYBIT": "STEEMUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "STEEMUSDT",
+		"HYPERLIQUID": false
+	},
+	"ILV": {
+		"BINANCE": "ILVUSDT",
+		"BYBIT": "ILVUSDT",
+		"OKX": false,
+		"BINGX": "ILV-USDT",
+		"BITGET": "ILVUSDT",
+		"HYPERLIQUID": false
+	},
+	"RIF": {
+		"BINANCE": "RIFUSDT",
+		"BYBIT": "RIFUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"GAS": {
+		"BINANCE": "GASUSDT",
+		"BYBIT": "GASUSDT",
+		"OKX": "GAS-USDT-SWAP",
+		"BINGX": "GAS-USDT",
+		"BITGET": "GASUSDT",
+		"HYPERLIQUID": "GAS"
+	},
+	"USDC": {
+		"BINANCE": "USDCUSDT",
+		"BYBIT": "USDCUSDT",
+		"OKX": "USDC-USDT-SWAP",
+		"BINGX": false,
+		"BITGET": "USDCUSDT",
+		"HYPERLIQUID": false
+	},
+	"BEAMX": {
+		"BINANCE": "BEAMXUSDT",
+		"BYBIT": "BEAMUSDT",
+		"OKX": false,
+		"BINGX": "BEAM-USDT",
+		"BITGET": "BEAMUSDT",
+		"HYPERLIQUID": false
+	},
+	"KAS": {
+		"BINANCE": "KASUSDT",
+		"BYBIT": "KASUSDT",
+		"OKX": false,
+		"BINGX": "KAS-USDT",
+		"BITGET": "KASUSDT",
+		"HYPERLIQUID": "KAS"
+	},
+	"1000BONK": {
+		"BINANCE": "1000BONKUSDT",
+		"BYBIT": "1000BONKUSDT",
+		"OKX": "BONK-USDT-SWAP",
+		"BINGX": "1000BONK-USDT",
+		"BITGET": "1000BONKUSDT",
+		"HYPERLIQUID": "kBONK"
+	},
+	"SUPER": {
+		"BINANCE": "SUPERUSDT",
+		"BYBIT": "SUPERUSDT",
+		"OKX": false,
+		"BINGX": "SUPER-USDT",
+		"BITGET": "SUPERUSDT",
+		"HYPERLIQUID": "SUPER"
+	},
+	"PYTH": {
+		"BINANCE": "PYTHUSDT",
+		"BYBIT": "PYTHUSDT",
+		"OKX": "PYTH-USDT-SWAP",
+		"BINGX": "PYTH-USDT",
+		"BITGET": "PYTHUSDT",
+		"HYPERLIQUID": "PYTH"
+	},
+	"USTC": {
+		"BINANCE": "USTCUSDT",
+		"BYBIT": "USTCUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "USTCUSDT",
+		"HYPERLIQUID": "USTC"
+	},
+	"ETHW": {
+		"BINANCE": "ETHWUSDT",
+		"BYBIT": "ETHWUSDT",
+		"OKX": "ETHW-USDT-SWAP",
+		"BINGX": "ETHW-USDT",
+		"BITGET": "ETHWUSDT",
+		"HYPERLIQUID": false
+	},
+	"ONG": {
+		"BINANCE": "ONGUSDT",
+		"BYBIT": "ONGUSDT",
+		"OKX": false,
+		"BINGX": "ONG-USDT",
+		"BITGET": "ONGUSDT",
+		"HYPERLIQUID": false
+	},
+	"JTO": {
+		"BINANCE": "JTOUSDT",
+		"BYBIT": "JTOUSDT",
+		"OKX": "JTO-USDT-SWAP",
+		"BINGX": "JTO-USDT",
+		"BITGET": "JTOUSDT",
+		"HYPERLIQUID": "JTO"
+	},
+	"1000SATS": {
+		"BINANCE": "1000SATSUSDT",
+		"BYBIT": "10000SATSUSDT",
+		"OKX": "SATS-USDT-SWAP",
+		"BINGX": "10000SATS-USDT",
+		"BITGET": "1000SATSUSDT",
+		"HYPERLIQUID": false
+	},
+	"1000RATS": {
+		"BINANCE": "1000RATSUSDT",
+		"BYBIT": "1000RATSUSDT",
+		"OKX": false,
+		"BINGX": "RATS-USDT",
+		"BITGET": "1000RATSUSDT",
+		"HYPERLIQUID": false
+	},
+	"AUCTION": {
+		"BINANCE": "AUCTIONUSDT",
+		"BYBIT": "AUCTIONUSDT",
+		"OKX": "AUCTION-USDT-SWAP",
+		"BINGX": "AUCTION-USDT",
+		"BITGET": "AUCTIONUSDT",
+		"HYPERLIQUID": false
+	},
+	"ACE": {
+		"BINANCE": "ACEUSDT",
+		"BYBIT": "ACEUSDT",
+		"OKX": "ACE-USDT-SWAP",
+		"BINGX": "ACE-USDT",
+		"BITGET": "ACEUSDT",
+		"HYPERLIQUID": "ACE"
+	},
+	"NFP": {
+		"BINANCE": "NFPUSDT",
+		"BYBIT": "NFPUSDT",
+		"OKX": false,
+		"BINGX": "NFP-USDT",
+		"BITGET": "NFPUSDT",
+		"HYPERLIQUID": false
+	},
+	"ONDO": {
+		"BINANCE": "ONDOUSDT",
+		"BYBIT": "ONDOUSDT",
+		"OKX": "ONDO-USDT-SWAP",
+		"BINGX": "ONDO-USDT",
+		"BITGET": "ONDOUSDT",
+		"HYPERLIQUID": "ONDO"
+	},
+	"MANTA": {
+		"BINANCE": "MANTAUSDT",
+		"BYBIT": "MANTAUSDT",
+		"OKX": false,
+		"BINGX": "MANTA-USDT",
+		"BITGET": "MANTAUSDT",
+		"HYPERLIQUID": "MANTA"
+	},
+	"LSK": {
+		"BINANCE": "LSKUSDT",
+		"BYBIT": "LSKUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "LSKUSDT",
+		"HYPERLIQUID": false
+	},
+	"JUP": {
+		"BINANCE": "JUPUSDT",
+		"BYBIT": "JUPUSDT",
+		"OKX": "JUP-USDT-SWAP",
+		"BINGX": "JUP-USDT",
+		"BITGET": "JUPUSDT",
+		"HYPERLIQUID": "JUP"
+	},
+	"ALT": {
+		"BINANCE": "ALTUSDT",
+		"BYBIT": "ALTUSDT",
+		"OKX": false,
+		"BINGX": "ALT-USDT",
+		"BITGET": "ALTUSDT",
+		"HYPERLIQUID": "ALT"
+	},
+	"XAI": {
+		"BINANCE": "XAIUSDT",
+		"BYBIT": "XAIUSDT",
+		"OKX": false,
+		"BINGX": "XAI-USDT",
+		"BITGET": "XAIUSDT",
+		"HYPERLIQUID": "XAI"
+	},
+	"MOVR": {
+		"BINANCE": "MOVRUSDT",
+		"BYBIT": "MOVRUSDT",
+		"OKX": false,
+		"BINGX": "MOVR-USDT",
+		"BITGET": "MOVRUSDT",
+		"HYPERLIQUID": false
+	},
+	"RONIN": {
+		"BINANCE": "RONINUSDT",
+		"BYBIT": "RONINUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"OM": {
+		"BINANCE": "OMUSDT",
+		"BYBIT": "OMUSDT",
+		"OKX": "OM-USDT-SWAP",
+		"BINGX": "OM-USDT",
+		"BITGET": "OMUSDT",
+		"HYPERLIQUID": "OM"
+	},
+	"STRK": {
+		"BINANCE": "STRKUSDT",
+		"BYBIT": "STRKUSDT",
+		"OKX": "STRK-USDT-SWAP",
+		"BINGX": "STRK-USDT",
+		"BITGET": "STRKUSDT",
+		"HYPERLIQUID": "STRK"
+	},
+	"PIXEL": {
+		"BINANCE": "PIXELUSDT",
+		"BYBIT": "PIXELUSDT",
+		"OKX": false,
+		"BINGX": "PIXEL-USDT",
+		"BITGET": "PIXELUSDT",
+		"HYPERLIQUID": false
+	},
+	"GLM": {
+		"BINANCE": "GLMUSDT",
+		"BYBIT": "GLMUSDT",
+		"OKX": "GLM-USDT-SWAP",
+		"BINGX": "GLM-USDT",
+		"BITGET": "GLMUSDT",
+		"HYPERLIQUID": false
+	},
+	"PORTAL": {
+		"BINANCE": "PORTALUSDT",
+		"BYBIT": "PORTALUSDT",
+		"OKX": false,
+		"BINGX": "PORTAL-USDT",
+		"BITGET": "PORTALUSDT",
+		"HYPERLIQUID": false
+	},
+	"AXL": {
+		"BINANCE": "AXLUSDT",
+		"BYBIT": "AXLUSDT",
+		"OKX": false,
+		"BINGX": "AXL-USDT",
+		"BITGET": "AXLUSDT",
+		"HYPERLIQUID": false
+	},
+	"TON": {
+		"BINANCE": "TONUSDT",
+		"BYBIT": "TONUSDT",
+		"OKX": "TON-USDT-SWAP",
+		"BINGX": "TONCOIN-USDT",
+		"BITGET": "TONUSDT",
+		"HYPERLIQUID": "TON"
+	},
+	"NOT": {
+		"BINANCE": "NOTUSDT",
+		"BYBIT": "NOTUSDT",
+		"OKX": "NOT-USDT-SWAP",
+		"BINGX": "NOT-USDT",
+		"BITGET": "NOTUSDT",
+		"HYPERLIQUID": "NOT"
+	},
+	"MYRO": {
+		"BINANCE": "MYROUSDT",
+		"BYBIT": "MYROUSDT",
+		"OKX": false,
+		"BINGX": "MYRO-USDT",
+		"BITGET": "MYROUSDT",
+		"HYPERLIQUID": false
+	},
+	"DYM": {
+		"BINANCE": "DYMUSDT",
+		"BYBIT": "DYMUSDT",
+		"OKX": false,
+		"BINGX": "DYM-USDT",
+		"BITGET": "DYMUSDT",
+		"HYPERLIQUID": "DYM"
+	},
+	"METIS": {
+		"BINANCE": "METISUSDT",
+		"BYBIT": "METISUSDT",
+		"OKX": "METIS-USDT-SWAP",
+		"BINGX": "METIS-USDT",
+		"BITGET": "METISUSDT",
+		"HYPERLIQUID": false
+	},
+	"AEVO": {
+		"BINANCE": "AEVOUSDT",
+		"BYBIT": "AEVOUSDT",
+		"OKX": "AEVO-USDT-SWAP",
+		"BINGX": "AEVO-USDT",
+		"BITGET": "AEVOUSDT",
+		"HYPERLIQUID": false
+	},
+	"VANRY": {
+		"BINANCE": "VANRYUSDT",
+		"BYBIT": "VANRYUSDT",
+		"OKX": false,
+		"BINGX": "VANRY-USDT",
+		"BITGET": "VANRYUSDT",
+		"HYPERLIQUID": false
+	},
+	"ENA": {
+		"BINANCE": "ENAUSDT",
+		"BYBIT": "ENAUSDT",
+		"OKX": "ENA-USDT-SWAP",
+		"BINGX": "ENA-USDT",
+		"BITGET": "ENAUSDT",
+		"HYPERLIQUID": "ENA"
+	},
+	"SAGA": {
+		"BINANCE": "SAGAUSDT",
+		"BYBIT": "SAGAUSDT",
+		"OKX": false,
+		"BINGX": "SAGA-USDT",
+		"BITGET": "SAGAUSDT",
+		"HYPERLIQUID": "SAGA"
+	},
+	"TNSR": {
+		"BINANCE": "TNSRUSDT",
+		"BYBIT": "TNSRUSDT",
+		"OKX": "TNSR-USDT-SWAP",
+		"BINGX": "TNSR-USDT",
+		"BITGET": "TNSRUSDT",
+		"HYPERLIQUID": "TNSR"
+	},
+	"TAO": {
+		"BINANCE": "TAOUSDT",
+		"BYBIT": "TAOUSDT",
+		"OKX": "TAO-USDT-SWAP",
+		"BINGX": "TAO-USDT",
+		"BITGET": "TAOUSDT",
+		"HYPERLIQUID": "TAO"
+	},
+	"ETHFI": {
+		"BINANCE": "ETHFIUSDT",
+		"BYBIT": "ETHFIUSDT",
+		"OKX": "ETHFI-USDT-SWAP",
+		"BINGX": "ETHFI-USDT",
+		"BITGET": "ETHFIUSDT",
+		"HYPERLIQUID": "ETHFI"
+	},
+	"BB": {
+		"BINANCE": "BBUSDT",
+		"BYBIT": "BBUSDT",
+		"OKX": false,
+		"BINGX": "BB-USDT",
+		"BITGET": "BBUSDT",
+		"HYPERLIQUID": false
+	},
+	"REZ": {
+		"BINANCE": "REZUSDT",
+		"BYBIT": "REZUSDT",
+		"OKX": false,
+		"BINGX": "REZ-USDT",
+		"BITGET": "REZUSDT",
+		"HYPERLIQUID": "REZ"
+	},
+	"OMNI": {
+		"BINANCE": "OMNIUSDT",
+		"BYBIT": "OMNIUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": "OMNI"
+	},
+	"TURBO": {
+		"BINANCE": "TURBOUSDT",
+		"BYBIT": "1000TURBOUSDT",
+		"OKX": "TURBO-USDT-SWAP",
+		"BINGX": "TURBO-USDT",
+		"BITGET": "TURBOUSDT",
+		"HYPERLIQUID": "TURBO"
+	},
+	"RENDER": {
+		"BINANCE": "RENDERUSDT",
+		"BYBIT": "RENDERUSDT",
+		"OKX": "RENDER-USDT-SWAP",
+		"BINGX": "RENDER-USDT",
+		"BITGET": "RENDERUSDT",
+		"HYPERLIQUID": "RENDER"
+	},
+	"IO": {
+		"BINANCE": "IOUSDT",
+		"BYBIT": "IOUSDT",
+		"OKX": false,
+		"BINGX": "IO-USDT",
+		"BITGET": "IOUSDT",
+		"HYPERLIQUID": "IO"
+	},
+	"BANANA": {
+		"BINANCE": "BANANAUSDT",
+		"BYBIT": "BANANAUSDT",
+		"OKX": false,
+		"BINGX": "BANANA-USDT",
+		"BITGET": "BANANAUSDT",
+		"HYPERLIQUID": "BANANA"
+	},
+	"BANANAS31": {
+		"BINANCE": "BANANAS31USDT",
+		"BYBIT": "BANANAS31USDT",
+		"OKX": false,
+		"BINGX": "BANANAS31-USDT",
+		"BITGET": "BANANAS31USDT",
+		"HYPERLIQUID": false
+	},
+	"G": {
+		"BINANCE": "GUSDT",
+		"BYBIT": "GUSDT",
+		"OKX": false,
+		"BINGX": "G-USDT",
+		"BITGET": "GUSDT",
+		"HYPERLIQUID": false
+	},
+	"RARE": {
+		"BINANCE": "RAREUSDT",
+		"BYBIT": "RAREUSDT",
+		"OKX": false,
+		"BINGX": "RARE-USDT",
+		"BITGET": "RAREUSDT",
+		"HYPERLIQUID": false
+	},
+	"MEW": {
+		"BINANCE": "MEWUSDT",
+		"BYBIT": "MEWUSDT",
+		"OKX": "MEW-USDT-SWAP",
+		"BINGX": "MEW-USDT",
+		"BITGET": "MEWUSDT",
+		"HYPERLIQUID": "MEW"
+	},
+	"ZRO": {
+		"BINANCE": "ZROUSDT",
+		"BYBIT": "ZROUSDT",
+		"OKX": "ZRO-USDT-SWAP",
+		"BINGX": "ZRO-USDT",
+		"BITGET": "ZROUSDT",
+		"HYPERLIQUID": "ZRO"
+	},
+	"LISTA": {
+		"BINANCE": "LISTAUSDT",
+		"BYBIT": "LISTAUSDT",
+		"OKX": false,
+		"BINGX": "LISTA-USDT",
+		"BITGET": "LISTAUSDT",
+		"HYPERLIQUID": false
+	},
+	"BRETT": {
+		"BINANCE": "BRETTUSDT",
+		"BYBIT": "BRETTUSDT",
+		"OKX": "BRETT-USDT-SWAP",
+		"BINGX": "BRETT-USDT",
+		"BITGET": "BRETTUSDT",
+		"HYPERLIQUID": "BRETT"
+	},
+	"VOXEL": {
+		"BINANCE": "VOXELUSDT",
+		"BYBIT": "VOXELUSDT",
+		"OKX": false,
+		"BINGX": "VOXEL-USDT",
+		"BITGET": "VOXELUSDT",
+		"HYPERLIQUID": false
+	},
+	"SYN": {
+		"BINANCE": "SYNUSDT",
+		"BYBIT": "SYNUSDT",
+		"OKX": false,
+		"BINGX": "SYN-USDT",
+		"BITGET": "SYNUSDT",
+		"HYPERLIQUID": false
+	},
+	"SYS": {
+		"BINANCE": "SYSUSDT",
+		"BYBIT": "SYSUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "SYSUSDT",
+		"HYPERLIQUID": false
+	},
+	"POPCAT": {
+		"BINANCE": "POPCATUSDT",
+		"BYBIT": "POPCATUSDT",
+		"OKX": "POPCAT-USDT-SWAP",
+		"BINGX": "POPCAT-USDT",
+		"BITGET": "POPCATUSDT",
+		"HYPERLIQUID": "POPCAT"
+	},
+	"SUN": {
+		"BINANCE": "SUNUSDT",
+		"BYBIT": "SUNUSDT",
+		"OKX": false,
+		"BINGX": "SUN-USDT",
+		"BITGET": "SUNUSDT",
+		"HYPERLIQUID": false
+	},
+	"DOGS": {
+		"BINANCE": "DOGSUSDT",
+		"BYBIT": "DOGSUSDT",
+		"OKX": "DOGS-USDT-SWAP",
+		"BINGX": "DOGS-USDT",
+		"BITGET": "DOGSUSDT",
+		"HYPERLIQUID": "kDOGS"
+	},
+	"FLUX": {
+		"BINANCE": "FLUXUSDT",
+		"BYBIT": "FLUXUSDT",
+		"OKX": false,
+		"BINGX": "FLUX-USDT",
+		"BITGET": "FLUXUSDT",
+		"HYPERLIQUID": false
+	},
+	"CHESS": {
+		"BINANCE": "CHESSUSDT",
+		"BYBIT": "CHESSUSDT",
+		"OKX": false,
+		"BINGX": "CHESS-USDT",
+		"BITGET": "CHESSUSDT",
+		"HYPERLIQUID": false
+	},
+	"MBOX": {
+		"BINANCE": "MBOXUSDT",
+		"BYBIT": "MBOXUSDT",
+		"OKX": false,
+		"BINGX": "MBOX-USDT",
+		"BITGET": "MBOXUSDT",
+		"HYPERLIQUID": false
+	},
+	"QUICK": {
+		"BINANCE": "QUICKUSDT",
+		"BYBIT": "QUICKUSDT",
+		"OKX": false,
+		"BINGX": "QUICK-USDT",
+		"BITGET": "QUICKUSDT",
+		"HYPERLIQUID": false
+	},
+	"NEIROETH": {
+		"BINANCE": "NEIROETHUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": "NEIROETH"
+	},
+	"RPL": {
+		"BINANCE": "RPLUSDT",
+		"BYBIT": "RPLUSDT",
+		"OKX": false,
+		"BINGX": "RPL-USDT",
+		"BITGET": "RPLUSDT",
+		"HYPERLIQUID": false
+	},
+	"POL": {
+		"BINANCE": "POLUSDT",
+		"BYBIT": "POLUSDT",
+		"OKX": "POL-USDT-SWAP",
+		"BINGX": "POL-USDT",
+		"BITGET": "POLUSDT",
+		"HYPERLIQUID": "POL"
+	},
+	"BOME": {
+		"BINANCE": "BOMEUSDT",
+		"BYBIT": "BOMEUSDT",
+		"OKX": "BOME-USDT-SWAP",
+		"BINGX": "BOME-USDT",
+		"BITGET": "BOMEUSDT",
+		"HYPERLIQUID": "BOME"
+	},
+	"UXLINK": {
+		"BINANCE": "UXLINKUSDT",
+		"BYBIT": "UXLINKUSDT",
+		"OKX": "UXLINK-USDT-SWAP",
+		"BINGX": "UXLINK-USDT",
+		"BITGET": "UXLINKUSDT",
+		"HYPERLIQUID": false
+	},
+	"NEIRO": {
+		"BINANCE": "NEIROUSDT",
+		"BYBIT": "1000NEIROCTOUSDT",
+		"OKX": "NEIRO-USDT-SWAP",
+		"BINGX": "NEIROCTO-USDT",
+		"BITGET": "NEIROCTOUSDT",
+		"HYPERLIQUID": "kNEIRO"
+	},
+	"KDA": {
+		"BINANCE": "KDAUSDT",
+		"BYBIT": "KDAUSDT",
+		"OKX": false,
+		"BINGX": "KDA-USDT",
+		"BITGET": "KDAUSDT",
+		"HYPERLIQUID": false
+	},
+	"FIDA": {
+		"BINANCE": "FIDAUSDT",
+		"BYBIT": "FIDAUSDT",
+		"OKX": false,
+		"BINGX": "FIDA-USDT",
+		"BITGET": "FIDAUSDT",
+		"HYPERLIQUID": false
+	},
+	"FIO": {
+		"BINANCE": "FIOUSDT",
+		"BYBIT": "FIOUSDT",
+		"OKX": false,
+		"BINGX": "FIO-USDT",
+		"BITGET": "FIOUSDT",
+		"HYPERLIQUID": false
+	},
+	"HMSTR": {
+		"BINANCE": "HMSTRUSDT",
+		"BYBIT": "HMSTRUSDT",
+		"OKX": "HMSTR-USDT-SWAP",
+		"BINGX": "HMSTR-USDT",
+		"BITGET": "HMSTRUSDT",
+		"HYPERLIQUID": "HMSTR"
+	},
+	"GHST": {
+		"BINANCE": "GHSTUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "GHST-USDT",
+		"BITGET": "GHSTUSDT",
+		"HYPERLIQUID": false
+	},
+	"COS": {
+		"BINANCE": "COSUSDT",
+		"BYBIT": "COSUSDT",
+		"OKX": false,
+		"BINGX": "COS-USDT",
+		"BITGET": "COSUSDT",
+		"HYPERLIQUID": false
+	},
+	"EIGEN": {
+		"BINANCE": "EIGENUSDT",
+		"BYBIT": "EIGENUSDT",
+		"OKX": "EIGEN-USDT-SWAP",
+		"BINGX": "EIGEN-USDT",
+		"BITGET": "EIGENUSDT",
+		"HYPERLIQUID": "EIGEN"
+	},
+	"DIA": {
+		"BINANCE": "DIAUSDT",
+		"BYBIT": "DIAUSDT",
+		"OKX": false,
+		"BINGX": "DIA-USDT",
+		"BITGET": "DIAUSDT",
+		"HYPERLIQUID": false
+	},
+	"REI": {
+		"BINANCE": "REIUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "REIUSDT",
+		"HYPERLIQUID": false
+	},
+	"CATI": {
+		"BINANCE": "CATIUSDT",
+		"BYBIT": "CATIUSDT",
+		"OKX": "CATI-USDT-SWAP",
+		"BINGX": "CATI-USDT",
+		"BITGET": "CATIUSDT",
+		"HYPERLIQUID": "CATI"
+	},
+	"1000CAT": {
+		"BINANCE": "1000CATUSDT",
+		"BYBIT": "1000CATUSDT",
+		"OKX": "CAT-USDT-SWAP",
+		"BINGX": "1000CAT-USDT",
+		"BITGET": "1000CATUSDT",
+		"HYPERLIQUID": false
+	},
+	"SAFE": {
+		"BINANCE": "SAFEUSDT",
+		"BYBIT": "SAFEUSDT",
+		"OKX": false,
+		"BINGX": "SAFE-USDT",
+		"BITGET": "SAFEUSDT",
+		"HYPERLIQUID": false
+	},
+	"GOAT": {
+		"BINANCE": "GOATUSDT",
+		"BYBIT": "GOATUSDT",
+		"OKX": "GOAT-USDT-SWAP",
+		"BINGX": "GOAT-USDT",
+		"BITGET": "GOATUSDT",
+		"HYPERLIQUID": "GOAT"
+	},
+	"MOODENG": {
+		"BINANCE": "MOODENGUSDT",
+		"BYBIT": "MOODENGUSDT",
+		"OKX": "MOODENG-USDT-SWAP",
+		"BINGX": "MOODENG-USDT",
+		"BITGET": "MOODENGUSDT",
+		"HYPERLIQUID": "MOODENG"
+	},
+	"SANTOS": {
+		"BINANCE": "SANTOSUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "SANTOS-USDT",
+		"BITGET": "SANTOSUSDT",
+		"HYPERLIQUID": false
+	},
+	"PONKE": {
+		"BINANCE": "PONKEUSDT",
+		"BYBIT": "PONKEUSDT",
+		"OKX": false,
+		"BINGX": "PONKE-USDT",
+		"BITGET": "PONKEUSDT",
+		"HYPERLIQUID": false
+	},
+	"COW": {
+		"BINANCE": "COWUSDT",
+		"BYBIT": "COWUSDT",
+		"OKX": false,
+		"BINGX": "COW-USDT",
+		"BITGET": "COWUSDT",
+		"HYPERLIQUID": false
+	},
+	"CETUS": {
+		"BINANCE": "CETUSUSDT",
+		"BYBIT": "CETUSUSDT",
+		"OKX": "CETUS-USDT-SWAP",
+		"BINGX": "CETUS-USDT",
+		"BITGET": "CETUSUSDT",
+		"HYPERLIQUID": false
+	},
+	"1000000MOG": {
+		"BINANCE": "1000000MOGUSDT",
+		"BYBIT": "1000000MOGUSDT",
+		"OKX": "MOG-USDT-SWAP",
+		"BINGX": "1000000MOG-USDT",
+		"BITGET": "1000000MOGUSDT",
+		"HYPERLIQUID": false
+	},
+	"GRASS": {
+		"BINANCE": "GRASSUSDT",
+		"BYBIT": "GRASSUSDT",
+		"OKX": "GRASS-USDT-SWAP",
+		"BINGX": "GRASS-USDT",
+		"BITGET": "GRASSUSDT",
+		"HYPERLIQUID": "GRASS"
+	},
+	"DRIFT": {
+		"BINANCE": "DRIFTUSDT",
+		"BYBIT": "DRIFTUSDT",
+		"OKX": false,
+		"BINGX": "DRIFT-USDT",
+		"BITGET": "DRIFTUSDT",
+		"HYPERLIQUID": false
+	},
+	"SWELL": {
+		"BINANCE": "SWELLUSDT",
+		"BYBIT": "SWELLUSDT",
+		"OKX": false,
+		"BINGX": "SWELL-USDT",
+		"BITGET": "SWELLUSDT",
+		"HYPERLIQUID": false
+	},
+	"PNUT": {
+		"BINANCE": "PNUTUSDT",
+		"BYBIT": "PNUTUSDT",
+		"OKX": "PNUT-USDT-SWAP",
+		"BINGX": "PNUT-USDT",
+		"BITGET": "PNUTUSDT",
+		"HYPERLIQUID": "PNUT"
+	},
+	"ACT": {
+		"BINANCE": "ACTUSDT",
+		"BYBIT": "ACTUSDT",
+		"OKX": "ACT-USDT-SWAP",
+		"BINGX": "ACT-USDT",
+		"BITGET": "ACTUSDT",
+		"HYPERLIQUID": false
+	},
+	"1000X": {
+		"BINANCE": "1000XUSDT",
+		"BYBIT": "1000XUSDT",
+		"OKX": false,
+		"BINGX": "X-USDT",
+		"BITGET": "XUSDT",
+		"HYPERLIQUID": false
+	},
+	"HIPPO": {
+		"BINANCE": "HIPPOUSDT",
+		"BYBIT": "HIPPOUSDT",
+		"OKX": false,
+		"BINGX": "HIPPO-USDT",
+		"BITGET": "HIPPOUSDT",
+		"HYPERLIQUID": false
+	},
+	"DEGEN": {
+		"BINANCE": "DEGENUSDT",
+		"BYBIT": "DEGENUSDT",
+		"OKX": "DEGEN-USDT-SWAP",
+		"BINGX": "DEGEN-USDT",
+		"BITGET": "DEGENUSDT",
+		"HYPERLIQUID": false
+	},
+	"AKT": {
+		"BINANCE": "AKTUSDT",
+		"BYBIT": "AKTUSDT",
+		"OKX": false,
+		"BINGX": "AKT-USDT",
+		"BITGET": "AKTUSDT",
+		"HYPERLIQUID": false
+	},
+	"BAN": {
+		"BINANCE": "BANUSDT",
+		"BYBIT": "BANUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "BANUSDT",
+		"HYPERLIQUID": false
+	},
+	"SLERF": {
+		"BINANCE": "SLERFUSDT",
+		"BYBIT": "SLERFUSDT",
+		"OKX": false,
+		"BINGX": "SLERF-USDT",
+		"BITGET": "SLERFUSDT",
+		"HYPERLIQUID": false
+	},
+	"SCRT": {
+		"BINANCE": "SCRTUSDT",
+		"BYBIT": "SCRTUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "SCRTUSDT",
+		"HYPERLIQUID": false
+	},
+	"THE": {
+		"BINANCE": "THEUSDT",
+		"BYBIT": "THEUSDT",
+		"OKX": false,
+		"BINGX": "THE-USDT",
+		"BITGET": "THEUSDT",
+		"HYPERLIQUID": false
+	},
+	"CHILLGUY": {
+		"BINANCE": "CHILLGUYUSDT",
+		"BYBIT": "CHILLGUYUSDT",
+		"OKX": false,
+		"BINGX": "CHILLGUY-USDT",
+		"BITGET": "CHILLGUYUSDT",
+		"HYPERLIQUID": "CHILLGUY"
+	},
+	"MORPHO": {
+		"BINANCE": "MORPHOUSDT",
+		"BYBIT": "MORPHOUSDT",
+		"OKX": "MORPHO-USDT-SWAP",
+		"BINGX": "MORPHO-USDT",
+		"BITGET": "MORPHOUSDT",
+		"HYPERLIQUID": "MORPHO"
+	},
+	"KAIA": {
+		"BINANCE": "KAIAUSDT",
+		"BYBIT": "KAIAUSDT",
+		"OKX": false,
+		"BINGX": "KAIA-USDT",
+		"BITGET": "KAIAUSDT",
+		"HYPERLIQUID": false
+	},
+	"AERO": {
+		"BINANCE": "AEROUSDT",
+		"BYBIT": "AEROUSDT",
+		"OKX": "AERO-USDT-SWAP",
+		"BINGX": "AERO-USDT",
+		"BITGET": "AEROUSDT",
+		"HYPERLIQUID": false
+	},
+	"1MBABYDOGE": {
+		"BINANCE": "1MBABYDOGEUSDT",
+		"BYBIT": "1000000BABYDOGEUSDT",
+		"OKX": false,
+		"BINGX": "1000000BABYDOGE-USDT",
+		"BITGET": "1MBABYDOGEUSDT",
+		"HYPERLIQUID": false
+	},
+	"1000WHY": {
+		"BINANCE": "1000WHYUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"1000CHEEMS": {
+		"BINANCE": "1000CHEEMSUSDT",
+		"BYBIT": "1000000CHEEMSUSDT",
+		"OKX": false,
+		"BINGX": "1000CHEEMS-USDT",
+		"BITGET": "1MCHEEMSUSDT",
+		"HYPERLIQUID": false
+	},
+	"ACX": {
+		"BINANCE": "ACXUSDT",
+		"BYBIT": "ACXUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "ACXUSDT",
+		"HYPERLIQUID": false
+	},
+	"ORCA": {
+		"BINANCE": "ORCAUSDT",
+		"BYBIT": "ORCAUSDT",
+		"OKX": false,
+		"BINGX": "ORCA-USDT",
+		"BITGET": "ORCAUSDT",
+		"HYPERLIQUID": false
+	},
+	"MOVE": {
+		"BINANCE": "MOVEUSDT",
+		"BYBIT": "MOVEUSDT",
+		"OKX": "MOVE-USDT-SWAP",
+		"BINGX": "MOVE-USDT",
+		"BITGET": "MOVEUSDT",
+		"HYPERLIQUID": "MOVE"
+	},
+	"RAYSOL": {
+		"BINANCE": "RAYSOLUSDT",
+		"BYBIT": "RAYDIUMUSDT",
+		"OKX": "RAY-USDT-SWAP",
+		"BINGX": "RAY-USDT",
+		"BITGET": "RAYUSDT",
+		"HYPERLIQUID": false
+	},
+	"KOMA": {
+		"BINANCE": "KOMAUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "KOMA-USDT",
+		"BITGET": "KOMAUSDT",
+		"HYPERLIQUID": false
+	},
+	"VIRTUAL": {
+		"BINANCE": "VIRTUALUSDT",
+		"BYBIT": "VIRTUALUSDT",
+		"OKX": "VIRTUAL-USDT-SWAP",
+		"BINGX": "VIRTUAL-USDT",
+		"BITGET": "VIRTUALUSDT",
+		"HYPERLIQUID": "VIRTUAL"
+	},
+	"SPX": {
+		"BINANCE": "SPXUSDT",
+		"BYBIT": "SPXUSDT",
+		"OKX": "SPX-USDT-SWAP",
+		"BINGX": "SPX-USDT",
+		"BITGET": "SPXUSDT",
+		"HYPERLIQUID": "SPX"
+	},
+	"ME": {
+		"BINANCE": "MEUSDT",
+		"BYBIT": "MEUSDT",
+		"OKX": "ME-USDT-SWAP",
+		"BINGX": "ME-USDT",
+		"BITGET": "MEUSDT",
+		"HYPERLIQUID": "ME"
+	},
+	"VELODROME": {
+		"BINANCE": "VELODROMEUSDT",
+		"BYBIT": "VELODROMEUSDT",
+		"OKX": false,
+		"BINGX": "VELODROME-USDT",
+		"BITGET": "VELOUSDT",
+		"HYPERLIQUID": false
+	},
+	"DEGO": {
+		"BINANCE": "DEGOUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "DEGO-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"AVA": {
+		"BINANCE": "AVAUSDT",
+		"BYBIT": "AVAUSDT",
+		"OKX": false,
+		"BINGX": "AVA-USDT",
+		"BITGET": "AVAUSDT",
+		"HYPERLIQUID": false
+	},
+	"VANA": {
+		"BINANCE": "VANAUSDT",
+		"BYBIT": "VANAUSDT",
+		"OKX": "VANA-USDT-SWAP",
+		"BINGX": "VANA-USDT",
+		"BITGET": "VANAUSDT",
+		"HYPERLIQUID": false
+	},
+	"PENGU": {
+		"BINANCE": "PENGUUSDT",
+		"BYBIT": "PENGUUSDT",
+		"OKX": "PENGU-USDT-SWAP",
+		"BINGX": "PENGU-USDT",
+		"BITGET": "PENGUUSDT",
+		"HYPERLIQUID": "PENGU"
+	},
+	"USUAL": {
+		"BINANCE": "USUALUSDT",
+		"BYBIT": "USUALUSDT",
+		"OKX": false,
+		"BINGX": "USUAL-USDT",
+		"BITGET": "USUALUSDT",
+		"HYPERLIQUID": "USUAL"
+	},
+	"LUMIA": {
+		"BINANCE": "LUMIAUSDT",
+		"BYBIT": "LUMIAUSDT",
+		"OKX": false,
+		"BINGX": "LUMIA-USDT",
+		"BITGET": "LUMIAUSDT",
+		"HYPERLIQUID": false
+	},
+	"KMNO": {
+		"BINANCE": "KMNOUSDT",
+		"BYBIT": "KMNOUSDT",
+		"OKX": "KMNO-USDT-SWAP",
+		"BINGX": "KMNO-USDT",
+		"BITGET": "KMNOUSDT",
+		"HYPERLIQUID": false
+	},
+	"CGPT": {
+		"BINANCE": "CGPTUSDT",
+		"BYBIT": "CGPTUSDT",
+		"OKX": false,
+		"BINGX": "CGPT-USDT",
+		"BITGET": "CGPTUSDT",
+		"HYPERLIQUID": false
+	},
+	"FARTCOIN": {
+		"BINANCE": "FARTCOINUSDT",
+		"BYBIT": "FARTCOINUSDT",
+		"OKX": "FARTCOIN-USDT-SWAP",
+		"BINGX": "FARTCOIN-USDT",
+		"BITGET": "FARTCOINUSDT",
+		"HYPERLIQUID": "FARTCOIN"
+	},
+	"AIXBT": {
+		"BINANCE": "AIXBTUSDT",
+		"BYBIT": "AIXBTUSDT",
+		"OKX": "AIXBT-USDT-SWAP",
+		"BINGX": "AIXBT-USDT",
+		"BITGET": "AIXBTUSDT",
+		"HYPERLIQUID": "AIXBT"
+	},
+	"MOCA": {
+		"BINANCE": "MOCAUSDT",
+		"BYBIT": "MOCAUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "MOCAUSDT",
+		"HYPERLIQUID": false
+	},
+	"HIVE": {
+		"BINANCE": "HIVEUSDT",
+		"BYBIT": "HIVEUSDT",
+		"OKX": false,
+		"BINGX": "HIVE-USDT",
+		"BITGET": "HIVEUSDT",
+		"HYPERLIQUID": false
+	},
+	"DEXE": {
+		"BINANCE": "DEXEUSDT",
+		"BYBIT": "DEXEUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "DEXEUSDT",
+		"HYPERLIQUID": false
+	},
+	"PHA": {
+		"BINANCE": "PHAUSDT",
+		"BYBIT": "PHAUSDT",
+		"OKX": false,
+		"BINGX": "PHA-USDT",
+		"BITGET": "PHAUSDT",
+		"HYPERLIQUID": false
+	},
+	"DF": {
+		"BINANCE": "DFUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "DF-USDT",
+		"BITGET": "DFUSDT",
+		"HYPERLIQUID": false
+	},
+	"BIO": {
+		"BINANCE": "BIOUSDT",
+		"BYBIT": "BIOUSDT",
+		"OKX": "BIO-USDT-SWAP",
+		"BINGX": "BIO-USDT",
+		"BITGET": "BIOUSDT",
+		"HYPERLIQUID": "BIO"
+	},
+	"AI16Z": {
+		"BINANCE": "AI16ZUSDT",
+		"BYBIT": "AI16ZUSDT",
+		"OKX": "AI16Z-USDT-SWAP",
+		"BINGX": "AI16Z-USDT",
+		"BITGET": "AI16ZUSDT",
+		"HYPERLIQUID": "AI16Z"
+	},
+	"GRIFFAIN": {
+		"BINANCE": "GRIFFAINUSDT",
+		"BYBIT": "GRIFFAINUSDT",
+		"OKX": "GRIFFAIN-USDT-SWAP",
+		"BINGX": "GRIFFAIN-USDT",
+		"BITGET": "GRIFFAINUSDT",
+		"HYPERLIQUID": "GRIFFAIN"
+	},
+	"ALCH": {
+		"BINANCE": "ALCHUSDT",
+		"BYBIT": "ALCHUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "ALCHUSDT",
+		"HYPERLIQUID": false
+	},
+	"SWARMS": {
+		"BINANCE": "SWARMSUSDT",
+		"BYBIT": "SWARMSUSDT",
+		"OKX": "SWARMS-USDT-SWAP",
+		"BINGX": "SWARMS-USDT",
+		"BITGET": "SWARMSUSDT",
+		"HYPERLIQUID": false
+	},
+	"COOKIE": {
+		"BINANCE": "COOKIEUSDT",
+		"BYBIT": "COOKIEUSDT",
+		"OKX": "COOKIE-USDT-SWAP",
+		"BINGX": "COOKIE-USDT",
+		"BITGET": "COOKIEUSDT",
+		"HYPERLIQUID": false
+	},
+	"SONIC": {
+		"BINANCE": "SONICUSDT",
+		"BYBIT": "SONICUSDT",
+		"OKX": "SONIC-USDT-SWAP",
+		"BINGX": "SONIC-USDT",
+		"BITGET": "SONICUSDT",
+		"HYPERLIQUID": false
+	},
+	"ZEREBRO": {
+		"BINANCE": "ZEREBROUSDT",
+		"BYBIT": "ZEREBROUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "ZEREBROUSDT",
+		"HYPERLIQUID": "ZEREBRO"
+	},
+	"ARC": {
+		"BINANCE": "ARCUSDT",
+		"BYBIT": "ARCUSDT",
+		"OKX": "ARC-USDT-SWAP",
+		"BINGX": "ARC-USDT",
+		"BITGET": "ARCUSDT",
+		"HYPERLIQUID": false
+	},
+	"AVAAI": {
+		"BINANCE": "AVAAIUSDT",
+		"BYBIT": "AVAAIUSDT",
+		"OKX": "AVAAI-USDT-SWAP",
+		"BINGX": "AVAAI-USDT",
+		"BITGET": "AVAAIUSDT",
+		"HYPERLIQUID": false
+	},
+	"TRUMP": {
+		"BINANCE": "TRUMPUSDT",
+		"BYBIT": "TRUMPUSDT",
+		"OKX": "TRUMP-USDT-SWAP",
+		"BINGX": "TRUMPSOL-USDT",
+		"BITGET": "TRUMPUSDT",
+		"HYPERLIQUID": "TRUMP"
+	},
+	"MELANIA": {
+		"BINANCE": "MELANIAUSDT",
+		"BYBIT": "MELANIAUSDT",
+		"OKX": false,
+		"BINGX": "MELANIA-USDT",
+		"BITGET": "MELANIAUSDT",
+		"HYPERLIQUID": "MELANIA"
+	},
+	"VTHO": {
+		"BINANCE": "VTHOUSDT",
+		"BYBIT": "VTHOUSDT",
+		"OKX": false,
+		"BINGX": "VTHO-USDT",
+		"BITGET": "VTHOUSDT",
+		"HYPERLIQUID": false
+	},
+	"ANIME": {
+		"BINANCE": "ANIMEUSDT",
+		"BYBIT": "ANIMEUSDT",
+		"OKX": "ANIME-USDT-SWAP",
+		"BINGX": "ANIME-USDT",
+		"BITGET": "ANIMEUSDT",
+		"HYPERLIQUID": "ANIME"
+	},
+	"VINE": {
+		"BINANCE": "VINEUSDT",
+		"BYBIT": "VINEUSDT",
+		"OKX": "VINE-USDT-SWAP",
+		"BINGX": "VINE-USDT",
+		"BITGET": "VINEUSDT",
+		"HYPERLIQUID": "VINE"
+	},
+	"PIPPIN": {
+		"BINANCE": "PIPPINUSDT",
+		"BYBIT": "PIPPINUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "PIPPINUSDT",
+		"HYPERLIQUID": false
+	},
+	"VVV": {
+		"BINANCE": "VVVUSDT",
+		"BYBIT": "VVVUSDT",
+		"OKX": false,
+		"BINGX": "VVV-USDT",
+		"BITGET": "VVVUSDT",
+		"HYPERLIQUID": "VVV"
+	},
+	"BERA": {
+		"BINANCE": "BERAUSDT",
+		"BYBIT": "BERAUSDT",
+		"OKX": "BERA-USDT-SWAP",
+		"BINGX": "BERA-USDT",
+		"BITGET": "BERAUSDT",
+		"HYPERLIQUID": "BERA"
+	},
+	"TST": {
+		"BINANCE": "TSTUSDT",
+		"BYBIT": "TSTBSCUSDT",
+		"OKX": false,
+		"BINGX": "TST-USDT",
+		"BITGET": "TSTBSCUSDT",
+		"HYPERLIQUID": "TST"
+	},
+	"LAYER": {
+		"BINANCE": "LAYERUSDT",
+		"BYBIT": "SOLAYERUSDT",
+		"OKX": "LAYER-USDT-SWAP",
+		"BINGX": "LAYER-USDT",
+		"BITGET": "LAYERUSDT",
+		"HYPERLIQUID": "LAYER"
+	},
+	"HEI": {
+		"BINANCE": "HEIUSDT",
+		"BYBIT": "HEIUSDT",
+		"OKX": false,
+		"BINGX": "HEI-USDT",
+		"BITGET": "HEIUSDT",
+		"HYPERLIQUID": false
+	},
+	"B3": {
+		"BINANCE": "B3USDT",
+		"BYBIT": "B3USDT",
+		"OKX": false,
+		"BINGX": "B3-USDT",
+		"BITGET": "B3USDT",
+		"HYPERLIQUID": false
+	},
+	"IP": {
+		"BINANCE": "IPUSDT",
+		"BYBIT": "IPUSDT",
+		"OKX": "IP-USDT-SWAP",
+		"BINGX": "IP-USDT",
+		"BITGET": "IPUSDT",
+		"HYPERLIQUID": "IP"
+	},
+	"GPS": {
+		"BINANCE": "GPSUSDT",
+		"BYBIT": "GPSUSDT",
+		"OKX": "GPS-USDT-SWAP",
+		"BINGX": "GPS-USDT",
+		"BITGET": "GPSUSDT",
+		"HYPERLIQUID": false
+	},
+	"SHELL": {
+		"BINANCE": "SHELLUSDT",
+		"BYBIT": "SHELLUSDT",
+		"OKX": "SHELL-USDT-SWAP",
+		"BINGX": "SHELL-USDT",
+		"BITGET": "SHELLUSDT",
+		"HYPERLIQUID": false
+	},
+	"KAITO": {
+		"BINANCE": "KAITOUSDT",
+		"BYBIT": "KAITOUSDT",
+		"OKX": "KAITO-USDT-SWAP",
+		"BINGX": "KAITO-USDT",
+		"BITGET": "KAITOUSDT",
+		"HYPERLIQUID": "KAITO"
+	},
+	"RED": {
+		"BINANCE": "REDUSDT",
+		"BYBIT": "REDUSDT",
+		"OKX": false,
+		"BINGX": "REDSTONE-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"VIC": {
+		"BINANCE": "VICUSDT",
+		"BYBIT": "VICUSDT",
+		"OKX": false,
+		"BINGX": "VIC-USDT",
+		"BITGET": "VICUSDT",
+		"HYPERLIQUID": false
+	},
+	"EPIC": {
+		"BINANCE": "EPICUSDT",
+		"BYBIT": "EPICUSDT",
+		"OKX": false,
+		"BINGX": "EPIC-USDT",
+		"BITGET": "EPICUSDT",
+		"HYPERLIQUID": false
+	},
+	"BMT": {
+		"BINANCE": "BMTUSDT",
+		"BYBIT": "BMTUSDT",
+		"OKX": false,
+		"BINGX": "BMT-USDT",
+		"BITGET": "BMTUSDT",
+		"HYPERLIQUID": false
+	},
+	"MUBARAK": {
+		"BINANCE": "MUBARAKUSDT",
+		"BYBIT": "MUBARAKUSDT",
+		"OKX": "MUBARAK-USDT-SWAP",
+		"BINGX": "MUBARAK-USDT",
+		"BITGET": "MUBARAKUSDT",
+		"HYPERLIQUID": false
+	},
+	"TUT": {
+		"BINANCE": "TUTUSDT",
+		"BYBIT": "TUTUSDT",
+		"OKX": false,
+		"BINGX": "TUT-USDT",
+		"BITGET": "TUTUSDT",
+		"HYPERLIQUID": false
+	},
+	"BID": {
+		"BINANCE": "BIDUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "BID-USDT",
+		"BITGET": "BIDUSDT",
+		"HYPERLIQUID": false
+	},
+	"FORM": {
+		"BINANCE": "FORMUSDT",
+		"BYBIT": "FORMUSDT",
+		"OKX": false,
+		"BINGX": "FORM-USDT",
+		"BITGET": "FORMUSDT",
+		"HYPERLIQUID": false
+	},
+	"BROCCOLI714": {
+		"BINANCE": "BROCCOLI714USDT",
+		"BYBIT": "BROCCOLIUSDT",
+		"OKX": false,
+		"BINGX": "BROCCOLI-USDT",
+		"BITGET": "BROCCOLIUSDT",
+		"HYPERLIQUID": false
+	},
+	"BROCCOLIF3B": {
+		"BINANCE": "BROCCOLIF3BUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "BROCCOLIF3B-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"BR": {
+		"BINANCE": "BRUSDT",
+		"BYBIT": "BRUSDT",
+		"OKX": false,
+		"BINGX": "BR-USDT",
+		"BITGET": "BRUSDT",
+		"HYPERLIQUID": false
+	},
+	"PLUME": {
+		"BINANCE": "PLUMEUSDT",
+		"BYBIT": "PLUMEUSDT",
+		"OKX": "PLUME-USDT-SWAP",
+		"BINGX": "PLUME-USDT",
+		"BITGET": "PLUMEUSDT",
+		"HYPERLIQUID": false
+	},
+	"NIL": {
+		"BINANCE": "NILUSDT",
+		"BYBIT": "NILUSDT",
+		"OKX": false,
+		"BINGX": "NIL-USDT",
+		"BITGET": "NILUSDT",
+		"HYPERLIQUID": "NIL"
+	},
+	"PARTI": {
+		"BINANCE": "PARTIUSDT",
+		"BYBIT": "PARTIUSDT",
+		"OKX": "PARTI-USDT-SWAP",
+		"BINGX": "PARTI-USDT",
+		"BITGET": "PARTIUSDT",
+		"HYPERLIQUID": false
+	},
+	"JELLYJELLY": {
+		"BINANCE": "JELLYJELLYUSDT",
+		"BYBIT": "JELLYJELLYUSDT",
+		"OKX": "JELLYJELLY-USDT-SWAP",
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"WAL": {
+		"BINANCE": "WALUSDT",
+		"BYBIT": "WALUSDT",
+		"OKX": "WAL-USDT-SWAP",
+		"BINGX": "WAL-USDT",
+		"BITGET": "WALUSDT",
+		"HYPERLIQUID": false
+	},
+	"PAXG": {
+		"BINANCE": "PAXGUSDT",
+		"BYBIT": "PAXGUSDT",
+		"OKX": false,
+		"BINGX": "PAXG-USDT",
+		"BITGET": "PAXGUSDT",
+		"HYPERLIQUID": "PAXG"
+	},
+	"GUN": {
+		"BINANCE": "GUNUSDT",
+		"BYBIT": "GUNUSDT",
+		"OKX": false,
+		"BINGX": "GUN-USDT",
+		"BITGET": "GUNUSDT",
+		"HYPERLIQUID": false
+	},
+	"FUN": {
+		"BINANCE": "FUNUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "FUNTOKEN-USDT",
+		"BITGET": "FUNUSDT",
+		"HYPERLIQUID": false
+	},
+	"MLN": {
+		"BINANCE": "MLNUSDT",
+		"BYBIT": "MLNUSDT",
+		"OKX": false,
+		"BINGX": "MLN-USDT",
+		"BITGET": "MLNUSDT",
+		"HYPERLIQUID": false
+	},
+	"ATH": {
+		"BINANCE": "ATHUSDT",
+		"BYBIT": "ATHUSDT",
+		"OKX": "ATH-USDT-SWAP",
+		"BINGX": "ATH-USDT",
+		"BITGET": "ATHUSDT",
+		"HYPERLIQUID": false
+	},
+	"BABY": {
+		"BINANCE": "BABYUSDT",
+		"BYBIT": "BABYUSDT",
+		"OKX": "BABY-USDT-SWAP",
+		"BINGX": "BABY-USDT",
+		"BITGET": "BABYUSDT",
+		"HYPERLIQUID": "BABY"
+	},
+	"FORTH": {
+		"BINANCE": "FORTHUSDT",
+		"BYBIT": "FORTHUSDT",
+		"OKX": false,
+		"BINGX": "FORTH-USDT",
+		"BITGET": "FORTHUSDT",
+		"HYPERLIQUID": false
+	},
+	"PROMPT": {
+		"BINANCE": "PROMPTUSDT",
+		"BYBIT": "PROMPTUSDT",
+		"OKX": "PROMPT-USDT-SWAP",
+		"BINGX": "PROMPT-USDT",
+		"BITGET": "PROMPTUSDT",
+		"HYPERLIQUID": "PROMPT"
+	},
+	"XCN": {
+		"BINANCE": "XCNUSDT",
+		"BYBIT": "XCNUSDT",
+		"OKX": false,
+		"BINGX": "XCN-USDT",
+		"BITGET": "XCNUSDT",
+		"HYPERLIQUID": false
+	},
+	"KERNEL": {
+		"BINANCE": "KERNELUSDT",
+		"BYBIT": "KERNELUSDT",
+		"OKX": false,
+		"BINGX": "KERNEL-USDT",
+		"BITGET": "KERNELUSDT",
+		"HYPERLIQUID": false
+	},
+	"WCT": {
+		"BINANCE": "WCTUSDT",
+		"BYBIT": "WCTUSDT",
+		"OKX": "WCT-USDT-SWAP",
+		"BINGX": "WCT-USDT",
+		"BITGET": "WCTUSDT",
+		"HYPERLIQUID": "WCT"
+	},
+	"INIT": {
+		"BINANCE": "INITUSDT",
+		"BYBIT": "INITUSDT",
+		"OKX": "INIT-USDT-SWAP",
+		"BINGX": "INIT-USDT",
+		"BITGET": "INITUSDT",
+		"HYPERLIQUID": "INIT"
+	},
+	"AERGO": {
+		"BINANCE": "AERGOUSDT",
+		"BYBIT": "AERGOUSDT",
+		"OKX": false,
+		"BINGX": "AERGO-USDT",
+		"BITGET": "AERGOUSDT",
+		"HYPERLIQUID": false
+	},
+	"DEEP": {
+		"BINANCE": "DEEPUSDT",
+		"BYBIT": "DEEPUSDT",
+		"OKX": false,
+		"BINGX": "DEEP-USDT",
+		"BITGET": "DEEPUSDT",
+		"HYPERLIQUID": false
+	},
+	"BANK": {
+		"BINANCE": "BANKUSDT",
+		"BYBIT": "BANKUSDT",
+		"OKX": false,
+		"BINGX": "BANK-USDT",
+		"BITGET": "BANKUSDT",
+		"HYPERLIQUID": false
+	},
+	"HYPER": {
+		"BINANCE": "HYPERUSDT",
+		"BYBIT": "HYPERUSDT",
+		"OKX": false,
+		"BINGX": "HYPERLANE-USDT",
+		"BITGET": "HYPERUSDT",
+		"HYPERLIQUID": "HYPER"
+	},
+	"FHE": {
+		"BINANCE": "FHEUSDT",
+		"BYBIT": "FHEUSDT",
+		"OKX": false,
+		"BINGX": "FHE-USDT",
+		"BITGET": "FHEUSDT",
+		"HYPERLIQUID": false
+	},
+	"FIS": {
+		"BINANCE": "FISUSDT",
+		"BYBIT": "FISUSDT",
+		"OKX": false,
+		"BINGX": "FIS-USDT",
+		"BITGET": "FISUSDT",
+		"HYPERLIQUID": false
+	},
+	"SIGN": {
+		"BINANCE": "SIGNUSDT",
+		"BYBIT": "SIGNUSDT",
+		"OKX": "SIGN-USDT-SWAP",
+		"BINGX": "SIGN-USDT",
+		"BITGET": "SIGNUSDT",
+		"HYPERLIQUID": false
+	},
+	"JST": {
+		"BINANCE": "JSTUSDT",
+		"BYBIT": "JSTUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": "JSTUSDT",
+		"HYPERLIQUID": false
+	},
+	"AIOT": {
+		"BINANCE": "AIOTUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "AIOT-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"DOLO": {
+		"BINANCE": "DOLOUSDT",
+		"BYBIT": "DOLOUSDT",
+		"OKX": false,
+		"BINGX": "DOLO-USDT",
+		"BITGET": "DOLOUSDT",
+		"HYPERLIQUID": false
+	},
+	"HAEDAL": {
+		"BINANCE": "HAEDALUSDT",
+		"BYBIT": "HAEDALUSDT",
+		"OKX": false,
+		"BINGX": "HAEDAL-USDT",
+		"BITGET": "HAEDALUSDT",
+		"HYPERLIQUID": false
+	},
+	"PUNDIX": {
+		"BINANCE": "PUNDIXUSDT",
+		"BYBIT": "PUNDIXUSDT",
+		"OKX": false,
+		"BINGX": "PUNDIX-USDT",
+		"BITGET": "PUNDIXUSDT",
+		"HYPERLIQUID": false
+	},
+	"CTK": {
+		"BINANCE": "CTKUSDT",
+		"BYBIT": "CTKUSDT",
+		"OKX": false,
+		"BINGX": "CTK-USDT",
+		"BITGET": "CTKUSDT",
+		"HYPERLIQUID": false
+	},
+	"STO": {
+		"BINANCE": "STOUSDT",
+		"BYBIT": "STOUSDT",
+		"OKX": false,
+		"BINGX": "STO-USDT",
+		"BITGET": "STOUSDT",
+		"HYPERLIQUID": false
+	},
+	"ALPINE": {
+		"BINANCE": "ALPINEUSDT",
+		"BYBIT": "ALPINEUSDT",
+		"OKX": false,
+		"BINGX": "ALPINE-USDT",
+		"BITGET": "ALPINEUSDT",
+		"HYPERLIQUID": false
+	},
+	"ASR": {
+		"BINANCE": "ASRUSDT",
+		"BYBIT": "ASRUSDT",
+		"OKX": false,
+		"BINGX": "ASR-USDT",
+		"BITGET": "ASRUSDT",
+		"HYPERLIQUID": false
+	},
+	"MILK": {
+		"BINANCE": "MILKUSDT",
+		"BYBIT": "MILKUSDT",
+		"OKX": false,
+		"BINGX": "MILK-USDT",
+		"BITGET": "MILKUSDT",
+		"HYPERLIQUID": false
+	},
+	"EPT": {
+		"BINANCE": "EPTUSDT",
+		"BYBIT": "EPTUSDT",
+		"OKX": false,
+		"BINGX": "EPT-USDT",
+		"BITGET": "EPTUSDT",
+		"HYPERLIQUID": false
+	},
+	"OBOL": {
+		"BINANCE": "OBOLUSDT",
+		"BYBIT": "OBOLUSDT",
+		"OKX": false,
+		"BINGX": "OBOL-USDT",
+		"BITGET": "OBOLUSDT",
+		"HYPERLIQUID": false
+	},
+	"SXT": {
+		"BINANCE": "SXTUSDT",
+		"BYBIT": "SXTUSDT",
+		"OKX": false,
+		"BINGX": "SXT-USDT",
+		"BITGET": "SXTUSDT",
+		"HYPERLIQUID": false
+	},
+	"B2": {
+		"BINANCE": "B2USDT",
+		"BYBIT": "B2USDT",
+		"OKX": false,
+		"BINGX": "B2-USDT",
+		"BITGET": "B2USDT",
+		"HYPERLIQUID": false
+	},
+	"DOOD": {
+		"BINANCE": "DOODUSDT",
+		"BYBIT": "DOODUSDT",
+		"OKX": "DOOD-USDT-SWAP",
+		"BINGX": "DOOD-USDT",
+		"BITGET": "DOODUSDT",
+		"HYPERLIQUID": "DOOD"
+	},
+	"SYRUP": {
+		"BINANCE": "SYRUPUSDT",
+		"BYBIT": "SYRUPUSDT",
+		"OKX": "SYRUP-USDT-SWAP",
+		"BINGX": "SYRUP-USDT",
+		"BITGET": "SYRUPUSDT",
+		"HYPERLIQUID": "SYRUP"
+	},
+	"ZKJ": {
+		"BINANCE": "ZKJUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "ZKJ-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"SKYAI": {
+		"BINANCE": "SKYAIUSDT",
+		"BYBIT": "SKYAIUSDT",
+		"OKX": false,
+		"BINGX": "SKYAI-USDT",
+		"BITGET": "SKYAIUSDT",
+		"HYPERLIQUID": false
+	},
+	"AGT": {
+		"BINANCE": "AGTUSDT",
+		"BYBIT": "AGTUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"CVC": {
+		"BINANCE": "CVCUSDT",
+		"BYBIT": "CVCUSDT",
+		"OKX": "CVC-USDT-SWAP",
+		"BINGX": "CVC-USDT",
+		"BITGET": "CVCUSDT",
+		"HYPERLIQUID": false
+	},
+	"NXPC": {
+		"BINANCE": "NXPCUSDT",
+		"BYBIT": "NXPCUSDT",
+		"OKX": "NXPC-USDT-SWAP",
+		"BINGX": "NXPC-USDT",
+		"BITGET": "NXPCUSDT",
+		"HYPERLIQUID": "NXPC"
+	},
+	"A": {
+		"BINANCE": "AUSDT",
+		"BYBIT": "AUSDT",
+		"OKX": "A-USDT-SWAP",
+		"BINGX": "A-USDT",
+		"BITGET": "AUSDT",
+		"HYPERLIQUID": false
+	},
+	"B": {
+		"BINANCE": "BUSDT",
+		"BYBIT": "BUSDT",
+		"OKX": false,
+		"BINGX": "B-USDT",
+		"BITGET": "BUSDT",
+		"HYPERLIQUID": false
+	},
+	"SOON": {
+		"BINANCE": "SOONUSDT",
+		"BYBIT": "SOONUSDT",
+		"OKX": "SOON-USDT-SWAP",
+		"BINGX": "SOON-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"SOPH": {
+		"BINANCE": "SOPHUSDT",
+		"BYBIT": "SOPHUSDT",
+		"OKX": "SOPH-USDT-SWAP",
+		"BINGX": "SOPH-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": "SOPH"
+	},
+	"HUMA": {
+		"BINANCE": "HUMAUSDT",
+		"BYBIT": "HUMAUSDT",
+		"OKX": "HUMA-USDT-SWAP",
+		"BINGX": "HUMA-USDT",
+		"BITGET": "HUMAUSDT",
+		"HYPERLIQUID": false
+	},
+	"MERL": {
+		"BINANCE": "MERLUSDT",
+		"BYBIT": "MERLUSDT",
+		"OKX": "MERL-USDT-SWAP",
+		"BINGX": "MERL-USDT",
+		"BITGET": "MERLUSDT",
+		"HYPERLIQUID": "MERL"
+	},
+	"AWE": {
+		"BINANCE": "AWEUSDT",
+		"BYBIT": "AWEUSDT",
+		"OKX": false,
+		"BINGX": "AWE-USDT",
+		"BITGET": "AWEUSDT",
+		"HYPERLIQUID": false
+	},
+	"HYPE": {
+		"BINANCE": "HYPEUSDT",
+		"BYBIT": "HYPEUSDT",
+		"OKX": "HYPE-USDT-SWAP",
+		"BINGX": "HYPE-USDT",
+		"BITGET": "HYPEUSDT",
+		"HYPERLIQUID": "HYPE"
+	},
+	"BDXN": {
+		"BINANCE": "BDXNUSDT",
+		"BYBIT": "BDXNUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"PORT3": {
+		"BINANCE": "PORT3USDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "PORT3-USDT",
+		"BITGET": "PORT3USDT",
+		"HYPERLIQUID": false
+	},
+	"PUFFER": {
+		"BINANCE": "PUFFERUSDT",
+		"BYBIT": "PUFFERUSDT",
+		"OKX": false,
+		"BINGX": "PUFFER-USDT",
+		"BITGET": "PUFFERUSDT",
+		"HYPERLIQUID": false
+	},
+	"LA": {
+		"BINANCE": "LAUSDT",
+		"BYBIT": "LAUSDT",
+		"OKX": "LA-USDT-SWAP",
+		"BINGX": "LA-USDT",
+		"BITGET": "LAUSDT",
+		"HYPERLIQUID": false
+	},
+	"1000000BOB": {
+		"BINANCE": "1000000BOBUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "1000000BOB-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"RESOLV": {
+		"BINANCE": "RESOLVUSDT",
+		"BYBIT": "RESOLVUSDT",
+		"OKX": "RESOLV-USDT-SWAP",
+		"BINGX": "RESOLV-USDT",
+		"BITGET": "RESOLVUSDT",
+		"HYPERLIQUID": "RESOLV"
+	},
+	"HOME": {
+		"BINANCE": "HOMEUSDT",
+		"BYBIT": "HOMEUSDT",
+		"OKX": "HOME-USDT-SWAP",
+		"BINGX": "HOME-USDT",
+		"BITGET": "HOMEUSDT",
+		"HYPERLIQUID": false
+	},
+	"SKATE": {
+		"BINANCE": "SKATEUSDT",
+		"BYBIT": "SKATEUSDT",
+		"OKX": false,
+		"BINGX": "SKATE-USDT",
+		"BITGET": "SKATEUSDT",
+		"HYPERLIQUID": false
+	},
+	"MYX": {
+		"BINANCE": "MYXUSDT",
+		"BYBIT": "MYXUSDT",
+		"OKX": false,
+		"BINGX": "MYX-USDT",
+		"BITGET": "MYXUSDT",
+		"HYPERLIQUID": false
+	},
+	"F": {
+		"BINANCE": "FUSDT",
+		"BYBIT": "FUSDT",
+		"OKX": false,
+		"BINGX": "F-USDT",
+		"BITGET": "FUSDT",
+		"HYPERLIQUID": false
+	},
+	"SPK": {
+		"BINANCE": "SPKUSDT",
+		"BYBIT": "SPKUSDT",
+		"OKX": "SPK-USDT-SWAP",
+		"BINGX": "SPK-USDT",
+		"BITGET": "SPKUSDT",
+		"HYPERLIQUID": false
+	},
+	"NEWT": {
+		"BINANCE": "NEWTUSDT",
+		"BYBIT": "NEWTUSDT",
+		"OKX": "NEWT-USDT-SWAP",
+		"BINGX": "NEWT-USDT",
+		"BITGET": "NEWTUSDT",
+		"HYPERLIQUID": false
+	},
+	"OL": {
+		"BINANCE": "OLUSDT",
+		"BYBIT": "OLUSDT",
+		"OKX": "OL-USDT-SWAP",
+		"BINGX": "OL-USDT",
+		"BITGET": "OLUSDT",
+		"HYPERLIQUID": false
+	},
+	"DMC": {
+		"BINANCE": "DMCUSDT",
+		"BYBIT": "DMCUSDT",
+		"OKX": false,
+		"BINGX": "DMC-USDT",
+		"BITGET": "DMCUSDT",
+		"HYPERLIQUID": false
+	},
+	"H": {
+		"BINANCE": "HUSDT",
+		"BYBIT": "HUSDT",
+		"OKX": "H-USDT-SWAP",
+		"BINGX": "H-USDT",
+		"BITGET": "HUSDT",
+		"HYPERLIQUID": false
+	},
+	"SAHARA": {
+		"BINANCE": "SAHARAUSDT",
+		"BYBIT": "SAHARAUSDT",
+		"OKX": "SAHARA-USDT-SWAP",
+		"BINGX": "SAHARA-USDT",
+		"BITGET": "SAHARAUSDT",
+		"HYPERLIQUID": false
+	},
+	"ICNT": {
+		"BINANCE": "ICNTUSDT",
+		"BYBIT": "ICNTUSDT",
+		"OKX": false,
+		"BINGX": "ICNT-USDT",
+		"BITGET": "ICNTUSDT",
+		"HYPERLIQUID": false
+	},
+	"M": {
+		"BINANCE": "MUSDT",
+		"BYBIT": "MUSDT",
+		"OKX": false,
+		"BINGX": "M-USDT",
+		"BITGET": "MUSDT",
+		"HYPERLIQUID": false
+	},
+	"BULLA": {
+		"BINANCE": "BULLAUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"IDOL": {
+		"BINANCE": "IDOLUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "IDOL-USDT",
+		"BITGET": "IDOLUSDT",
+		"HYPERLIQUID": false
+	},
+	"PUMPBTC": {
+		"BINANCE": "PUMPBTCUSDT",
+		"BYBIT": "PUMPBTCUSDT",
+		"OKX": false,
+		"BINGX": "PUMPBTC-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"PUMP": {
+		"BINANCE": "PUMPUSDT",
+		"BYBIT": "PUMPFUNUSDT",
+		"OKX": "PUMP-USDT-SWAP",
+		"BINGX": "PUMP-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": "PUMP"
+	},
+	"TANSSI": {
+		"BINANCE": "TANSSIUSDT",
+		"BYBIT": "TANSSIUSDT",
+		"OKX": false,
+		"BINGX": "TANSSI-USDT",
+		"BITGET": "TANSSIUSDT",
+		"HYPERLIQUID": false
+	},
+	"CROSS": {
+		"BINANCE": "CROSSUSDT",
+		"BYBIT": "CROSSUSDT",
+		"OKX": false,
+		"BINGX": "CROSS-USDT",
+		"BITGET": "CROSSUSDT",
+		"HYPERLIQUID": false
+	},
+	"AIN": {
+		"BINANCE": "AINUSDT",
+		"BYBIT": "AINUSDT",
+		"OKX": false,
+		"BINGX": "AIN-USDT",
+		"BITGET": "AINUSDT",
+		"HYPERLIQUID": false
+	},
+	"TAC": {
+		"BINANCE": "TACUSDT",
+		"BYBIT": "TACUSDT",
+		"OKX": false,
+		"BINGX": "TAC-USDT",
+		"BITGET": "TACUSDT",
+		"HYPERLIQUID": false
+	},
+	"VELVET": {
+		"BINANCE": "VELVETUSDT",
+		"BYBIT": "VELVETUSDT",
+		"OKX": false,
+		"BINGX": "VELVET-USDT",
+		"BITGET": "VELVETUSDT",
+		"HYPERLIQUID": false
+	},
+	"ERA": {
+		"BINANCE": "ERAUSDT",
+		"BYBIT": "ERAUSDT",
+		"OKX": false,
+		"BINGX": "ERA-USDT",
+		"BITGET": "ERAUSDT",
+		"HYPERLIQUID": false
+	},
+	"C": {
+		"BINANCE": "CUSDT",
+		"BYBIT": "CUSDT",
+		"OKX": false,
+		"BINGX": "C-USDT",
+		"BITGET": "CUSDT",
+		"HYPERLIQUID": false
+	},
+	"CVX": {
+		"BINANCE": "CVXUSDT",
+		"BYBIT": "CVXUSDT",
+		"OKX": "CVX-USDT-SWAP",
+		"BINGX": false,
+		"BITGET": "CVXUSDT",
+		"HYPERLIQUID": false
+	},
+	"ZORA": {
+		"BINANCE": "ZORAUSDT",
+		"BYBIT": "ZORAUSDT",
+		"OKX": false,
+		"BINGX": "ZORA-USDT",
+		"BITGET": "ZORAUSDT",
+		"HYPERLIQUID": "ZORA"
+	},
+	"TAG": {
+		"BINANCE": "TAGUSDT",
+		"BYBIT": "1000TAGUSDT",
+		"OKX": false,
+		"BINGX": "TAG-USDT",
+		"BITGET": "TAGUSDT",
+		"HYPERLIQUID": false
+	},
+	"ZRC": {
+		"BINANCE": "ZRCUSDT",
+		"BYBIT": "ZRCUSDT",
+		"OKX": false,
+		"BINGX": "ZRC-USDT",
+		"BITGET": "ZRCUSDT",
+		"HYPERLIQUID": false
+	},
+	"ESPORTS": {
+		"BINANCE": "ESPORTSUSDT",
+		"BYBIT": "ESPORTSUSDT",
+		"OKX": false,
+		"BINGX": "ESPORTS-USDT",
+		"BITGET": "ESPORTSUSDT",
+		"HYPERLIQUID": false
+	},
+	"A2Z": {
+		"BINANCE": "A2ZUSDT",
+		"BYBIT": "A2ZUSDT",
+		"OKX": false,
+		"BINGX": "A2Z-USDT",
+		"BITGET": "A2ZUSDT",
+		"HYPERLIQUID": false
+	},
+	"TREE": {
+		"BINANCE": "TREEUSDT",
+		"BYBIT": "TREEUSDT",
+		"OKX": "TREE-USDT-SWAP",
+		"BINGX": "TREE-USDT",
+		"BITGET": "TREEUSDT",
+		"HYPERLIQUID": false
+	},
+	"NAORIS": {
+		"BINANCE": "NAORISUSDT",
+		"BYBIT": "NAORISUSDT",
+		"OKX": false,
+		"BINGX": "NAORIS-USDT",
+		"BITGET": "NAORISUSDT",
+		"HYPERLIQUID": false
+	},
+	"PLAY": {
+		"BINANCE": "PLAYUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"PROVE": {
+		"BINANCE": "PROVEUSDT",
+		"BYBIT": "PROVEUSDT",
+		"OKX": false,
+		"BINGX": "PROVE-USDT",
+		"BITGET": "PROVEUSDT",
+		"HYPERLIQUID": "PROVE"
+	},
+	"TOWNS": {
+		"BINANCE": "TOWNSUSDT",
+		"BYBIT": "TOWNSUSDT",
+		"OKX": false,
+		"BINGX": "TOWNS-USDT",
+		"BITGET": "TOWNSUSDT",
+		"HYPERLIQUID": false
+	},
+	"ALL": {
+		"BINANCE": "ALLUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"SQD": {
+		"BINANCE": "SQDUSDT",
+		"BYBIT": "SQDUSDT",
+		"OKX": false,
+		"BINGX": "SQD-USDT",
+		"BITGET": "SQDUSDT",
+		"HYPERLIQUID": false
+	},
+	"IN": {
+		"BINANCE": "INUSDT",
+		"BYBIT": "INUSDT",
+		"OKX": false,
+		"BINGX": "IN-USDT",
+		"BITGET": "INUSDT",
+		"HYPERLIQUID": false
+	},
+	"TAIKO": {
+		"BINANCE": "TAIKOUSDT",
+		"BYBIT": "TAIKOUSDT",
+		"OKX": false,
+		"BINGX": "TAIKO-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"SLP": {
+		"BINANCE": "SLPUSDT",
+		"BYBIT": "SLPUSDT",
+		"OKX": "SLP-USDT-SWAP",
+		"BINGX": "SLP-USDT",
+		"BITGET": "SLPUSDT",
+		"HYPERLIQUID": false
+	},
+	"CARV": {
+		"BINANCE": "CARVUSDT",
+		"BYBIT": "CARVUSDT",
+		"OKX": false,
+		"BINGX": "CARV-USDT",
+		"BITGET": "CARVUSDT",
+		"HYPERLIQUID": false
+	},
+	"XNY": {
+		"BINANCE": "XNYUSDT",
+		"BYBIT": "XNYUSDT",
+		"OKX": false,
+		"BINGX": "XNY-USDT",
+		"BITGET": "XNYUSDT",
+		"HYPERLIQUID": false
+	},
+	"AIO": {
+		"BINANCE": "AIOUSDT",
+		"BYBIT": "AIOUSDT",
+		"OKX": false,
+		"BINGX": "AIO-USDT",
+		"BITGET": "AIOUSDT",
+		"HYPERLIQUID": false
+	},
+	"USELESS": {
+		"BINANCE": "USELESSUSDT",
+		"BYBIT": "USELESSUSDT",
+		"OKX": "USELESS-USDT-SWAP",
+		"BINGX": "USELESS-USDT",
+		"BITGET": "USELESSUSDT",
+		"HYPERLIQUID": false
+	},
+	"DAM": {
+		"BINANCE": "DAMUSDT",
+		"BYBIT": "DAMUSDT",
+		"OKX": false,
+		"BINGX": "DAM-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"CUDIS": {
+		"BINANCE": "CUDISUSDT",
+		"BYBIT": "CUDISUSDT",
+		"OKX": false,
+		"BINGX": "CUDIS-USDT",
+		"BITGET": "CUDISUSDT",
+		"HYPERLIQUID": false
+	},
+	"SAPIEN": {
+		"BINANCE": "SAPIENUSDT",
+		"BYBIT": "SAPIENUSDT",
+		"OKX": false,
+		"BINGX": "SAPIEN-USDT",
+		"BITGET": "SAPIENUSDT",
+		"HYPERLIQUID": false
+	},
+	"XPL": {
+		"BINANCE": "XPLUSDT",
+		"BYBIT": "XPLUSDT",
+		"OKX": "XPL-USDT-SWAP",
+		"BINGX": "XPL-USDT",
+		"BITGET": "XPLUSDT",
+		"HYPERLIQUID": "XPL"
+	},
+	"WLFI": {
+		"BINANCE": "WLFIUSDT",
+		"BYBIT": "WLFIUSDT",
+		"OKX": "WLFI-USDT-SWAP",
+		"BINGX": "WLFI-USDT",
+		"BITGET": "WLFIUSDT",
+		"HYPERLIQUID": "WLFI"
+	},
+	"SOMI": {
+		"BINANCE": "SOMIUSDT",
+		"BYBIT": "SOMIUSDT",
+		"OKX": false,
+		"BINGX": "SOMI-USDT",
+		"BITGET": "SOMIUSDT",
+		"HYPERLIQUID": false
+	},
+	"MITO": {
+		"BINANCE": "MITOUSDT",
+		"BYBIT": "MITOUSDT",
+		"OKX": false,
+		"BINGX": "MITO-USDT",
+		"BITGET": "MITOUSDT",
+		"HYPERLIQUID": false
+	},
+	"LINEA": {
+		"BINANCE": "LINEAUSDT",
+		"BYBIT": "LINEAUSDT",
+		"OKX": "LINEA-USDT-SWAP",
+		"BINGX": "LINEA-USDT",
+		"BITGET": "LINEAUSDT",
+		"HYPERLIQUID": "LINEA"
+	},
+	"Q": {
+		"BINANCE": "QUSDT",
+		"BYBIT": "QUSDT",
+		"OKX": false,
+		"BINGX": "Q-USDT",
+		"BITGET": "QUSDT",
+		"HYPERLIQUID": false
+	},
+	"ARIA": {
+		"BINANCE": "ARIAUSDT",
+		"BYBIT": "ARIAUSDT",
+		"OKX": false,
+		"BINGX": "ARIA-USDT",
+		"BITGET": "ARIAUSDT",
+		"HYPERLIQUID": false
+	},
+	"TAKE": {
+		"BINANCE": "TAKEUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "TAKE-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"BTCDOM": {
+		"BINANCE": "BTCDOMUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"D": {
+		"BINANCE": "DUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "D-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"PROM": {
+		"BINANCE": "PROMUSDT",
+		"BYBIT": "PROMUSDT",
+		"OKX": false,
+		"BINGX": "PROM-USDT",
+		"BITGET": "PROMUSDT",
+		"HYPERLIQUID": false
+	},
+	"S": {
+		"BINANCE": "SUSDT",
+		"BYBIT": "SUSDT",
+		"OKX": "S-USDT-SWAP",
+		"BINGX": "S-USDT",
+		"BITGET": "SUSDT",
+		"HYPERLIQUID": "S"
+	},
+	"SOLV": {
+		"BINANCE": "SOLVUSDT",
+		"BYBIT": "SOLVUSDT",
+		"OKX": "SOLV-USDT-SWAP",
+		"BINGX": "SOLV-USDT",
+		"BITGET": "SOLVUSDT",
+		"HYPERLIQUID": false
+	},
+	"SIREN": {
+		"BINANCE": "SIRENUSDT",
+		"BYBIT": "SIRENUSDT",
+		"OKX": false,
+		"BINGX": "SIREN-USDT",
+		"BITGET": "SIRENUSDT",
+		"HYPERLIQUID": false
+	},
+	"MAVIA": {
+		"BINANCE": "MAVIAUSDT",
+		"BYBIT": "MAVIAUSDT",
+		"OKX": false,
+		"BINGX": "MAVIA-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": "MAVIA"
+	},
+	"OG": {
+		"BINANCE": "OGUSDT",
+		"BYBIT": "OGUSDT",
+		"OKX": false,
+		"BINGX": "OG-USDT",
+		"BITGET": "OGUSDT",
+		"HYPERLIQUID": false
+	},
+	"YALA": {
+		"BINANCE": "YALAUSDT",
+		"BYBIT": "YALAUSDT",
+		"OKX": false,
+		"BINGX": "YALA-USDT",
+		"BITGET": "YALAUSDT",
+		"HYPERLIQUID": false
+	},
+	"BAS": {
+		"BINANCE": "BASUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "BAS-USDT",
+		"BITGET": "BASUSDT",
+		"HYPERLIQUID": false
+	},
+	"BTR": {
+		"BINANCE": "BTRUSDT",
+		"BYBIT": "BTRUSDT",
+		"OKX": false,
+		"BINGX": "BTR-USDT",
+		"BITGET": "BTRUSDT",
+		"HYPERLIQUID": false
+	},
+	"HEMI": {
+		"BINANCE": "HEMIUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": "HEMI-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"PTB": {
+		"BINANCE": "PTBUSDT",
+		"BYBIT": "PTBUSDT",
+		"OKX": false,
+		"BINGX": "PTB-USDT",
+		"BITGET": "PTBUSDT",
+		"HYPERLIQUID": false
+	},
+	"OPEN": {
+		"BINANCE": "OPENUSDT",
+		"BYBIT": "OPENUSDT",
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"FLOCK": {
+		"BINANCE": "FLOCKUSDT",
+		"BYBIT": "FLOCKUSDT",
+		"OKX": false,
+		"BINGX": "FLOCK-USDT",
+		"BITGET": "FLOCKUSDT",
+		"HYPERLIQUID": false
+	},
+	"SKY": {
+		"BINANCE": "SKYUSDT",
+		"BYBIT": "SKYUSDT",
+		"OKX": "SKY-USDT-SWAP",
+		"BINGX": "SKY-USDT",
+		"BITGET": "SKYUSDT",
+		"HYPERLIQUID": "SKY"
+	},
+	"AVNT": {
+		"BINANCE": "AVNTUSDT",
+		"BYBIT": "AVNTUSDT",
+		"OKX": false,
+		"BINGX": "AVNT-USDT",
+		"BITGET": "AVNTUSDT",
+		"HYPERLIQUID": false
+	},
+	"HOLO": {
+		"BINANCE": "HOLOUSDT",
+		"BYBIT": "HOLOUSDT",
+		"OKX": false,
+		"BINGX": "HOLO-USDT",
+		"BITGET": "HOLOUSDT",
+		"HYPERLIQUID": false
+	},
+	"XPIN": {
+		"BINANCE": "XPINUSDT",
+		"BYBIT": "XPINUSDT",
+		"OKX": false,
+		"BINGX": "XPIN-USDT",
+		"BITGET": "XPINUSDT",
+		"HYPERLIQUID": false
+	},
+	"UB": {
+		"BINANCE": "UBUSDT",
+		"BYBIT": "UBUSDT",
+		"OKX": false,
+		"BINGX": "UB-USDT",
+		"BITGET": "UBUSDT",
+		"HYPERLIQUID": false
+	},
+	"ZKC": {
+		"BINANCE": "ZKCUSDT",
+		"BYBIT": "ZKCUSDT",
+		"OKX": false,
+		"BINGX": "ZKC-USDT",
+		"BITGET": "ZKCUSDT",
+		"HYPERLIQUID": false
+	},
+	"TOSHI": {
+		"BINANCE": "TOSHIUSDT",
+		"BYBIT": "1000TOSHIUSDT",
+		"OKX": false,
+		"BINGX": "TOSHI-USDT",
+		"BITGET": "TOSHIUSDT",
+		"HYPERLIQUID": false
+	},
+	"STBL": {
+		"BINANCE": "STBLUSDT",
+		"BYBIT": "STBLUSDT",
+		"OKX": false,
+		"BINGX": "STBL-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"0G": {
+		"BINANCE": "0GUSDT",
+		"BYBIT": "0GUSDT",
+		"OKX": false,
+		"BINGX": "0G-USDT",
+		"BITGET": "0GUSDT",
+		"HYPERLIQUID": false
+	},
+	"AIA": {
+		"BINANCE": "AIAUSDT",
+		"BYBIT": "AIAUSDT",
+		"OKX": false,
+		"BINGX": "AIA-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": false
+	},
+	"BARD": {
+		"BINANCE": "BARDUSDT",
+		"BYBIT": "BARDUSDT",
+		"OKX": "BARD-USDT-SWAP",
+		"BINGX": "BARD-USDT",
+		"BITGET": "BARDUSDT",
+		"HYPERLIQUID": false
+	},
+	"ASTER": {
+		"BINANCE": "ASTERUSDT",
+		"BYBIT": "ASTERUSDT",
+		"OKX": false,
+		"BINGX": "ASTER-USDT",
+		"BITGET": false,
+		"HYPERLIQUID": "ASTER"
+	},
+	"TRADOOR": {
+		"BINANCE": "TRADOORUSDT",
+		"BYBIT": false,
+		"OKX": false,
+		"BINGX": false,
+		"BITGET": false,
+		"HYPERLIQUID": false
+	}
+}

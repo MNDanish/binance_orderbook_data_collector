@@ -1,0 +1,344 @@
+# file: multi_ws_recorder.py
+import asyncio
+import json
+import time
+from collections import deque
+import random
+import signal
+import logging
+import aiofiles
+import websockets  # pip install websockets
+import os
+import requests
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+
+# ---------- Config ----------
+BINANCE_FUTURES_WS_BASE = "wss://fstream.binance.com"
+INBOUND_LIMIT_PER_CONN = 10  # msgs/sec (enforced by Binance)
+CONN_ATTEMPT_LIMIT = 300     # attempts per 5 minutes per IP
+CONN_ATTEMPT_WINDOW = 300    # seconds (5 minutes)
+STARTUP_STAGGER = 1.0        # seconds between starting connections
+PING_INTERVAL = 60           # seconds - websockets handles ping/pong
+TOP_ORDERBOOK_LEVELS = 100   # Number of top bid/ask levels to save
+# ----------------------------
+
+
+class ConnAttemptTracker:
+    """Track connection attempts in a sliding window to avoid exceeding 300 per 5 minutes."""
+    def __init__(self):
+        self.attempts = deque()
+
+    def record_attempt(self):
+        now = time.time()
+        self.attempts.append(now)
+        self._evict(now)
+
+    def _evict(self, now):
+        while self.attempts and (now - self.attempts[0] > CONN_ATTEMPT_WINDOW):
+            self.attempts.popleft()
+
+    def count(self):
+        now = time.time()
+        self._evict(now)
+        return len(self.attempts)
+
+    def can_attempt(self):
+        return self.count() < CONN_ATTEMPT_LIMIT
+
+
+class ConnectionWorker:
+    """
+    One websocket connection worker. Handles one stream (or combined streams if you change build_url).
+    Implements Binance Futures official orderbook management process.
+    """
+    def __init__(self, stream_name, attempt_tracker: ConnAttemptTracker, out_dir="data", downgrade_on_spike=True):
+        self.stream = stream_name.lower()
+        self.attempt_tracker = attempt_tracker
+        self.backoff_base = 1.0
+        self.backoff_attempts = 0
+        self.running = True
+        self.inbound_timestamps = deque(maxlen=200)
+        self.id = self.stream
+        self.out_dir = out_dir
+        self.downgrade_on_spike = downgrade_on_spike
+        self.current_stream = self.stream
+        self._file = None
+        # throttling writes to disk
+        self.last_write_time = 0
+        self.write_interval = 1.0  # 1 second
+
+        # Orderbook state
+        self.snapshot = None
+        self.last_update_id = None
+        self.snapshot_ready = False
+        self.local_orderbook = {"bids": {}, "asks": {}}
+        self.last_processed_u = None
+
+    def _ws_url(self):
+        return f"{BINANCE_FUTURES_WS_BASE}/ws/{self.current_stream}"
+
+    async def _open_output(self):
+        filename = f"{self.out_dir}/all_streams_data.txt"
+        self._file = await aiofiles.open(filename, mode="a", encoding="utf-8")
+        await self._get_depth_snapshot()
+
+    async def _get_depth_snapshot(self):
+        """Fetch snapshot from REST and reset local state"""
+        try:
+            symbol = self.stream.split('@')[0].upper()
+            url = "https://fapi.binance.com/fapi/v1/depth"
+            params = {"symbol": symbol, "limit": 1000}
+
+            response = requests.get(url, params=params, timeout=5)
+            if response.status_code == 200:
+                self.snapshot = response.json()
+                self.last_update_id = self.snapshot.get("lastUpdateId")
+
+                # reset state
+                self.last_processed_u = None
+                self.snapshot_ready = True
+
+                self._initialize_local_orderbook()
+
+                # Create clean snapshot format with top N levels
+                snapshot_bids = self.snapshot.get("bids", [])[:TOP_ORDERBOOK_LEVELS]
+                snapshot_asks = self.snapshot.get("asks", [])[:TOP_ORDERBOOK_LEVELS]
+
+                timestamp = self.snapshot.get("T")
+            
+                orderbook_data = {
+                    "symbol": symbol,
+                    "timestamp": timestamp,
+                    "update_id": None,
+                    "prev_update_id": None,
+                    "bids": [[str(p), str(q)] for p, q in snapshot_bids],
+                    "asks": [[str(p), str(q)] for p, q in snapshot_asks]
+                }
+
+                await self._file.write(json.dumps(orderbook_data) + "\n")
+
+                logging.info(f"{self.id}: Snapshot loaded, lastUpdateId={self.last_update_id}")
+            else:
+                logging.warning(f"{self.id}: Failed to get snapshot: {response.status_code}")
+        except Exception as e:
+            logging.warning(f"{self.id}: Error getting snapshot: {e}")
+
+    def _initialize_local_orderbook(self):
+        self.local_orderbook = {"bids": {}, "asks": {}}
+
+        for price, qty in self.snapshot.get("bids", []):
+            q = float(qty)
+            if q > 0:
+                self.local_orderbook["bids"][float(price)] = q
+
+        for price, qty in self.snapshot.get("asks", []):
+            q = float(qty)
+            if q > 0:
+                self.local_orderbook["asks"][float(price)] = q
+
+        logging.info(f"{self.id}: Local orderbook initialized with {len(self.local_orderbook['bids'])} bids, {len(self.local_orderbook['asks'])} asks")
+
+    async def _process_depth_update(self, message: str):
+        try:
+            data = json.loads(message)
+            if data.get("e") != "depthUpdate":
+                return
+
+            U, u, pu = data.get("U"), data.get("u"), data.get("pu")
+
+            if not self.snapshot_ready:
+                return
+
+            # discard old
+            if u < self.last_update_id:
+                return
+
+            # first event after snapshot
+            if self.last_processed_u is None:
+                if not (U <= self.last_update_id and u >= self.last_update_id):
+                    logging.warning(f"{self.id}: First event misaligned U={U}, u={u}, lastUpdateId={self.last_update_id}")
+                    await self._get_depth_snapshot()
+                    return
+            else:
+                # check sequence
+                if pu != self.last_processed_u:
+                    logging.warning(f"{self.id}: Sequence mismatch pu={pu} != lastProcessedU={self.last_processed_u}")
+                    await self._get_depth_snapshot()
+                    return
+
+            self.last_processed_u = u
+            await self._apply_orderbook_update(data)
+
+        except Exception as e:
+            logging.error(f"{self.id}: Error processing depth update: {e}")
+
+    async def _apply_orderbook_update(self, data):
+        # Update local orderbook
+        for price, qty in data.get("b", []):
+            p, q = float(price), float(qty)
+            if q == 0:
+                self.local_orderbook["bids"].pop(p, None)
+            else:
+                self.local_orderbook["bids"][p] = q
+
+        for price, qty in data.get("a", []):
+            p, q = float(price), float(qty)
+            if q == 0:
+                self.local_orderbook["asks"].pop(p, None)
+            else:
+                self.local_orderbook["asks"][p] = q
+
+        # Sort and limit to top 100 levels
+        sorted_bids = sorted(self.local_orderbook["bids"].items(), reverse=True)
+        sorted_asks = sorted(self.local_orderbook["asks"].items())
+        
+        # Limit to top N levels for each side
+        limited_bids = sorted_bids[:TOP_ORDERBOOK_LEVELS]
+        limited_asks = sorted_asks[:TOP_ORDERBOOK_LEVELS]
+
+        orderbook_data = {
+            "symbol": data.get("s"),
+            "timestamp": int(time.time() * 1000),
+            "update_id": data.get("u"),
+            "prev_update_id": data.get("pu"),
+            "bids": [[str(p), str(q)] for p, q in limited_bids],
+            "asks": [[str(p), str(q)] for p, q in limited_asks]
+        }
+
+        await self._write_msg(json.dumps(orderbook_data))
+
+    async def _write_msg(self, raw: str):
+        if self._file:
+            now = time.time()
+            if now - self.last_write_time >= self.write_interval:
+                await self._file.write(raw + "\n")
+                self.last_write_time = now
+
+    async def stop(self):
+        self.running = False
+
+    async def run_once(self):
+        if not self.attempt_tracker.can_attempt():
+            logging.warning(f"{self.id}: connection-attempt limit reached; delaying")
+            await asyncio.sleep(5 + random.random() * 5)
+            return False
+
+        self.attempt_tracker.record_attempt()
+        url = self._ws_url()
+        logging.info(f"{self.id}: connecting to {url} (attempts={self.attempt_tracker.count()})")
+
+        try:
+            async with websockets.connect(url, ping_interval=PING_INTERVAL, ping_timeout=10) as ws:
+                await self._open_output()
+                self.backoff_attempts = 0
+                logging.info(f"{self.id}: connected")
+
+                async for message in ws:
+                    self.inbound_timestamps.append(time.time())
+                    await self._process_depth_update(message)
+
+                    if not self.running:
+                        logging.info(f"{self.id}: stop requested; closing")
+                        await ws.close()
+                        break
+
+                if self._file:
+                    await self._file.flush()
+                    await self._file.close()
+                    self._file = None
+
+                return True
+
+        except websockets.exceptions.ConnectionClosedError as e:
+            logging.warning(f"{self.id}: connection closed error: {e}")
+        except Exception as e:
+            logging.exception(f"{self.id}: exception during websocket session: {e}")
+
+        if self._file:
+            try:
+                await self._file.flush()
+                await self._file.close()
+            except Exception:
+                pass
+            self._file = None
+
+        return False
+
+    async def run(self):
+        while self.running:
+            ok = await self.run_once()
+            if ok:
+                self.backoff_attempts = max(0, self.backoff_attempts - 1)
+                await asyncio.sleep(0.5 + random.random() * 0.5)
+            else:
+                self.backoff_attempts += 1
+                wait = min(60, self.backoff_base * (2 ** (self.backoff_attempts - 1)))
+                wait *= (0.5 + random.random() * 0.5)
+                logging.info(f"{self.id}: backoff {wait:.1f}s")
+                await asyncio.sleep(wait)
+
+        logging.info(f"{self.id}: worker stopped")
+
+
+class MultiConnector:
+    def __init__(self, streams, out_dir="data", downgrade_on_spike=True, startup_stagger=STARTUP_STAGGER):
+        self.streams = [s.lower() for s in streams]
+        self.attempt_tracker = ConnAttemptTracker()
+        self.workers = []
+        self.tasks = []
+        self.out_dir = out_dir
+        self.downgrade_on_spike = downgrade_on_spike
+        self.startup_stagger = startup_stagger
+
+    async def start(self):
+        for stream in self.streams:
+            w = ConnectionWorker(stream, self.attempt_tracker, out_dir=self.out_dir, downgrade_on_spike=self.downgrade_on_spike)
+            self.workers.append(w)
+
+        for w in self.workers:
+            t = asyncio.create_task(w.run())
+            self.tasks.append(t)
+            await asyncio.sleep(self.startup_stagger)
+
+        logging.info(f"Started {len(self.workers)} workers")
+
+    async def stop(self):
+        logging.info("Stopping all workers...")
+        for w in self.workers:
+            await w.stop()
+        await asyncio.gather(*self.tasks, return_exceptions=True)
+        logging.info("All workers stopped.")
+
+
+# -----------------------
+# Example usage
+# -----------------------
+async def main():
+    with open("offsets.json", "r") as f:
+        offsets = json.load(f)
+
+    test_streams = [f"{sym}usdt@depth@100ms".lower() for sym in sorted(offsets.keys())]
+    test_streams = test_streams[:200]  # single stream for testing
+
+    output_dir = "data"
+    os.makedirs(output_dir, exist_ok=True)
+
+    manager = MultiConnector(test_streams, out_dir=output_dir)
+
+    loop = asyncio.get_running_loop()
+    stop_event = asyncio.Event()
+
+    def _signal(sig, frame):
+        logging.info("Received stop signal")
+        stop_event.set()
+
+    signal.signal(signal.SIGINT, _signal)
+    signal.signal(signal.SIGTERM, _signal)
+
+    await manager.start()
+    await stop_event.wait()
+    await manager.stop()
+
+if __name__ == "__main__":
+    asyncio.run(main())
