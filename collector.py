@@ -47,14 +47,58 @@ class ConnAttemptTracker:
         return self.count() < CONN_ATTEMPT_LIMIT
 
 
+class GlobalRateLimiter:
+    """Global rate limiter that can pause all workers when rate limits are hit."""
+    def __init__(self):
+        self.is_banned = False
+        self.ban_until = 0
+        self.retry_after = 0
+        self.lock = asyncio.Lock()
+    
+    async def check_rate_limit(self, response):
+        """Check response for rate limit errors and update global state."""
+        async with self.lock:
+            if response.status_code == 429:
+                # Rate limit hit - get retry-after header
+                self.retry_after = int(response.headers.get('Retry-After', 60))
+                self.ban_until = time.time() + self.retry_after
+                self.is_banned = True
+                logging.warning(f"Rate limit hit! Banned for {self.retry_after} seconds")
+                return False
+            elif response.status_code == 418:
+                # IP banned - longer ban
+                self.ban_until = time.time() + 300  # 5 minutes
+                self.is_banned = True
+                logging.error(f"IP banned! Banned for 5 minutes")
+                return False
+            else:
+                # Success - reset ban if it was set
+                if self.is_banned:
+                    self.is_banned = False
+                    self.ban_until = 0
+                    logging.info("Rate limit ban lifted")
+                return True
+    
+    async def wait_if_banned(self):
+        """Wait if currently banned."""
+        async with self.lock:
+            if self.is_banned and time.time() < self.ban_until:
+                wait_time = self.ban_until - time.time()
+                logging.info(f"Waiting {wait_time:.1f}s due to rate limit ban")
+                await asyncio.sleep(wait_time)
+                self.is_banned = False
+                self.ban_until = 0
+
+
 class ConnectionWorker:
     """
     One websocket connection worker. Handles one stream (or combined streams if you change build_url).
     Implements Binance Futures official orderbook management process.
     """
-    def __init__(self, stream_name, attempt_tracker: ConnAttemptTracker, out_dir="data", downgrade_on_spike=True):
+    def __init__(self, stream_name, attempt_tracker: ConnAttemptTracker, rate_limiter: GlobalRateLimiter, out_dir="data", downgrade_on_spike=True):
         self.stream = stream_name.lower()
         self.attempt_tracker = attempt_tracker
+        self.rate_limiter = rate_limiter
         self.backoff_base = 1.0
         self.backoff_attempts = 0
         self.running = True
@@ -86,11 +130,21 @@ class ConnectionWorker:
     async def _get_depth_snapshot(self):
         """Fetch snapshot from REST and reset local state"""
         try:
+            # Check if we're globally banned
+            await self.rate_limiter.wait_if_banned()
+            
             symbol = self.stream.split('@')[0].upper()
             url = "https://fapi.binance.com/fapi/v1/depth"
             params = {"symbol": symbol, "limit": 1000}
 
             response = requests.get(url, params=params, timeout=5)
+            
+            # Check for rate limit errors
+            if not await self.rate_limiter.check_rate_limit(response):
+                # We're banned, wait and retry
+                await self.rate_limiter.wait_if_banned()
+                return await self._get_depth_snapshot()  # Retry after ban
+            
             if response.status_code == 200:
                 self.snapshot = response.json()
                 self.last_update_id = self.snapshot.get("lastUpdateId")
@@ -285,6 +339,7 @@ class MultiConnector:
     def __init__(self, streams, out_dir="data", downgrade_on_spike=True, startup_stagger=STARTUP_STAGGER):
         self.streams = [s.lower() for s in streams]
         self.attempt_tracker = ConnAttemptTracker()
+        self.rate_limiter = GlobalRateLimiter()
         self.workers = []
         self.tasks = []
         self.out_dir = out_dir
@@ -293,7 +348,7 @@ class MultiConnector:
 
     async def start(self):
         for stream in self.streams:
-            w = ConnectionWorker(stream, self.attempt_tracker, out_dir=self.out_dir, downgrade_on_spike=self.downgrade_on_spike)
+            w = ConnectionWorker(stream, self.attempt_tracker, self.rate_limiter, out_dir=self.out_dir, downgrade_on_spike=self.downgrade_on_spike)
             self.workers.append(w)
 
         for w in self.workers:
