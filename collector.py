@@ -45,7 +45,7 @@ BINANCE_FUTURES_WS_BASE = "wss://fstream.binance.com"
 INBOUND_LIMIT_PER_CONN = 10  # msgs/sec (enforced by Binance)
 CONN_ATTEMPT_LIMIT = 300     # attempts per 5 minutes per IP
 CONN_ATTEMPT_WINDOW = 300    # seconds (5 minutes)
-STARTUP_STAGGER = 1.0        # seconds between starting connections
+STARTUP_STAGGER = 2.0        # seconds between starting connections
 PING_INTERVAL = 60           # seconds - websockets handles ping/pong
 TOP_ORDERBOOK_LEVELS = 100   # Number of top bid/ask levels to save
 # ----------------------------
