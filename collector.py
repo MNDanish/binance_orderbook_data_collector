@@ -48,6 +48,7 @@ CONN_ATTEMPT_WINDOW = 300    # seconds (5 minutes)
 STARTUP_STAGGER = 2.0        # seconds between starting connections
 PING_INTERVAL = 60           # seconds - websockets handles ping/pong
 TOP_ORDERBOOK_LEVELS = 20   # Number of top bid/ask levels to save
+INCREMENT = 100
 # ----------------------------
 
 
@@ -399,9 +400,14 @@ class MultiConnector:
 async def main():
     with open("offsets.json", "r") as f:
         offsets = json.load(f)
+    
+    machine_number = 1
+    lower_bound = (machine_number - 1) * INCREMENT
+    upper_bound = machine_number * INCREMENT
 
+    # for symbol in sorted(offsets.keys()):
     test_streams = [f"{sym}usdt@depth@100ms".lower() for sym in sorted(offsets.keys())]
-    test_streams = test_streams[:100]  # single stream for testing
+    test_streams = test_streams[lower_bound:upper_bound]  # single stream for testing
 
     output_dir = "data"
     os.makedirs(output_dir, exist_ok=True)
