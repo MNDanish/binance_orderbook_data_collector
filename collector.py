@@ -154,8 +154,6 @@ class DiskSpaceMonitor:
             disk_info['free_percentage'] <= self.warning_threshold or
             int(time.time()) % 3600 < self.check_interval  # Send hourly status
         )
-
-        self._send_telegram_message(message)
         
         if should_send:
             success = self._send_telegram_message(message)
