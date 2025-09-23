@@ -57,7 +57,7 @@ INCREMENT = 100
 # Telegram Bot Configuration
 TELEGRAM_BOT_TOKEN = "7698606892:AAF3tdAefxtYV0pNg-rKbWzhEP39HUZX4AA"  # Replace with your bot token
 TELEGRAM_CHAT_ID = "757310263"      # Replace with your chat ID
-DISK_CHECK_INTERVAL = 300  # Check disk space every 5 minutes
+DISK_CHECK_INTERVAL = 600  # Check disk space every 5 minutes
 DISK_WARNING_THRESHOLD = 10  # Warning when disk usage is above 90% (10% free)
 # ----------------------------
 
@@ -149,20 +149,8 @@ class DiskSpaceMonitor:
 ⚠️ <b>Warning Threshold:</b> {self.warning_threshold}% free space
         """.strip()
         
-        # Send notification if below threshold or every hour for status updates
-        should_send = (
-            disk_info['free_percentage'] <= self.warning_threshold or
-            int(time.time()) % 3600 < self.check_interval  # Send hourly status
-        )
-        
-        if should_send:
-            success = self._send_telegram_message(message)
-            if success:
-                logging.info(f"Disk space notification sent: {disk_info['free_percentage']:.1f}% free")
-            else:
-                logging.warning("Failed to send disk space notification")
-        else:
-            logging.debug(f"Disk space check: {disk_info['free_percentage']:.1f}% free (no notification needed)")
+        # Send message every time (every 5 minutes)
+        success = self._send_telegram_message(message)
     
     def _monitor_loop(self):
         """Main monitoring loop that runs in background thread."""
