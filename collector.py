@@ -10,6 +10,10 @@ import aiofiles
 import websockets  # pip install websockets
 import os
 import requests
+import shutil
+import threading
+import telebot
+from datetime import datetime
 
 # Configure logging to write to both console and log file with UTC timezone
 import logging.handlers
@@ -49,7 +53,157 @@ STARTUP_STAGGER = 2.0        # seconds between starting connections
 PING_INTERVAL = 60           # seconds - websockets handles ping/pong
 TOP_ORDERBOOK_LEVELS = 20   # Number of top bid/ask levels to save
 INCREMENT = 100
+
+# Telegram Bot Configuration
+TELEGRAM_BOT_TOKEN = "7698606892:AAF3tdAefxtYV0pNg-rKbWzhEP39HUZX4AA"  # Replace with your bot token
+TELEGRAM_CHAT_ID = "757310263"      # Replace with your chat ID
+DISK_CHECK_INTERVAL = 300  # Check disk space every 5 minutes
+DISK_WARNING_THRESHOLD = 10  # Warning when disk usage is above 90% (10% free)
 # ----------------------------
+
+
+class DiskSpaceMonitor:
+    """Monitor disk space and send notifications via Telegram."""
+    
+    def __init__(self, bot_token, chat_id, machine_number, check_interval=300, warning_threshold=10):
+        self.bot_token = bot_token
+        self.chat_id = chat_id
+        self.check_interval = check_interval
+        self.warning_threshold = warning_threshold  # Percentage of free space to trigger warning
+        self.running = False
+        self.thread = None
+        self.bot = None
+        self.machine_number = machine_number
+
+        if bot_token and bot_token != "YOUR_BOT_TOKEN_HERE":
+            try:
+                self.bot = telebot.TeleBot(bot_token)
+                logging.info("Telegram bot initialized successfully")
+            except Exception as e:
+                logging.error(f"Failed to initialize Telegram bot: {e}")
+                self.bot = None
+        else:
+            logging.warning("Telegram bot token not configured")
+    
+    def _format_bytes(self, bytes_value):
+        """Convert bytes to human readable format."""
+        for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+            if bytes_value < 1024.0:
+                return f"{bytes_value:.1f} {unit}"
+            bytes_value /= 1024.0
+        return f"{bytes_value:.1f} PB"
+    
+    def _get_disk_usage(self, path="/"):
+        """Get disk usage information for the specified path."""
+        try:
+            total, used, free = shutil.disk_usage(path)
+            free_percentage = (free / total) * 100
+            used_percentage = (used / total) * 100
+            
+            return {
+                'total': total,
+                'used': used,
+                'free': free,
+                'free_percentage': free_percentage,
+                'used_percentage': used_percentage,
+                'path': path
+            }
+        except Exception as e:
+            logging.error(f"Error getting disk usage: {e}")
+            return None
+    
+    def _send_telegram_message(self, message):
+        """Send message to Telegram."""
+        if not self.bot or self.chat_id == "YOUR_CHAT_ID_HERE":
+            logging.warning("Telegram not configured, message not sent")
+            return False
+        
+        try:
+            self.bot.send_message(self.chat_id, message, parse_mode='HTML')
+            return True
+        except Exception as e:
+            logging.error(f"Failed to send Telegram message: {e}")
+            return False
+    
+    def _check_disk_space(self):
+        """Check disk space and send notification if needed."""
+        disk_info = self._get_disk_usage()
+        if not disk_info:
+            return
+        
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC")
+        
+        # Create status message
+        status_emoji = "🟢" if disk_info['free_percentage'] > self.warning_threshold else "🔴"
+        
+        message = f"""
+{status_emoji} <b>Disk Space Monitor (Machine {self.machine_number})</b>
+📅 <b>Time:</b> {timestamp}
+💾 <b>Path:</b> {disk_info['path']}
+
+📊 <b>Disk Usage:</b>
+• Total: {self._format_bytes(disk_info['total'])}
+• Used: {self._format_bytes(disk_info['used'])} ({disk_info['used_percentage']:.1f}%)
+• Free: {self._format_bytes(disk_info['free'])} ({disk_info['free_percentage']:.1f}%)
+
+⚠️ <b>Warning Threshold:</b> {self.warning_threshold}% free space
+        """.strip()
+        
+        # Send notification if below threshold or every hour for status updates
+        should_send = (
+            disk_info['free_percentage'] <= self.warning_threshold or
+            int(time.time()) % 3600 < self.check_interval  # Send hourly status
+        )
+
+        self._send_telegram_message(message)
+        
+        if should_send:
+            success = self._send_telegram_message(message)
+            if success:
+                logging.info(f"Disk space notification sent: {disk_info['free_percentage']:.1f}% free")
+            else:
+                logging.warning("Failed to send disk space notification")
+        else:
+            logging.debug(f"Disk space check: {disk_info['free_percentage']:.1f}% free (no notification needed)")
+    
+    def _monitor_loop(self):
+        """Main monitoring loop that runs in background thread."""
+        logging.info(f"Disk space monitor started (checking every {self.check_interval} seconds)")
+        
+        while self.running:
+            try:
+                self._check_disk_space()
+            except Exception as e:
+                logging.error(f"Error in disk space monitor: {e}")
+            
+            # Sleep for the check interval
+            for _ in range(self.check_interval):
+                if not self.running:
+                    break
+                time.sleep(1)
+        
+        logging.info("Disk space monitor stopped")
+    
+    def start(self):
+        """Start the disk space monitoring in a background thread."""
+        if self.running:
+            logging.warning("Disk space monitor is already running")
+            return
+        
+        self.running = True
+        self.thread = threading.Thread(target=self._monitor_loop, daemon=True)
+        self.thread.start()
+        logging.info("Disk space monitor thread started")
+    
+    def stop(self):
+        """Stop the disk space monitoring."""
+        if not self.running:
+            return
+        
+        self.running = False
+        if self.thread and self.thread.is_alive():
+            self.thread.join(timeout=5)
+        logging.info("Disk space monitor stopped")
 
 
 class ConnAttemptTracker:
@@ -364,7 +518,7 @@ class ConnectionWorker:
 
 
 class MultiConnector:
-    def __init__(self, streams, out_dir="data", downgrade_on_spike=True, startup_stagger=STARTUP_STAGGER):
+    def __init__(self, streams, machine_number, out_dir="data", downgrade_on_spike=True, startup_stagger=STARTUP_STAGGER):
         self.streams = [s.lower() for s in streams]
         self.attempt_tracker = ConnAttemptTracker()
         self.rate_limiter = GlobalRateLimiter()
@@ -373,8 +527,21 @@ class MultiConnector:
         self.out_dir = out_dir
         self.downgrade_on_spike = downgrade_on_spike
         self.startup_stagger = startup_stagger
+        self.machine_number = machine_number
+
+        # Initialize disk space monitor
+        self.disk_monitor = DiskSpaceMonitor(
+            bot_token=TELEGRAM_BOT_TOKEN,
+            chat_id=TELEGRAM_CHAT_ID,
+            machine_number=self.machine_number,
+            check_interval=DISK_CHECK_INTERVAL,
+            warning_threshold=DISK_WARNING_THRESHOLD
+        )
 
     async def start(self):
+        # Start disk space monitor
+        self.disk_monitor.start()
+        
         for stream in self.streams:
             w = ConnectionWorker(stream, self.attempt_tracker, self.rate_limiter, out_dir=self.out_dir, downgrade_on_spike=self.downgrade_on_spike)
             self.workers.append(w)
@@ -391,6 +558,10 @@ class MultiConnector:
         for w in self.workers:
             await w.stop()
         await asyncio.gather(*self.tasks, return_exceptions=True)
+        
+        # Stop disk space monitor
+        self.disk_monitor.stop()
+        
         logging.info("All workers stopped.")
 
 
@@ -412,7 +583,7 @@ async def main():
     output_dir = "data"
     os.makedirs(output_dir, exist_ok=True)
 
-    manager = MultiConnector(test_streams, out_dir=output_dir)
+    manager = MultiConnector(test_streams, machine_number, out_dir=output_dir)
 
     loop = asyncio.get_running_loop()
     stop_event = asyncio.Event()
