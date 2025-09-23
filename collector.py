@@ -47,7 +47,7 @@ CONN_ATTEMPT_LIMIT = 300     # attempts per 5 minutes per IP
 CONN_ATTEMPT_WINDOW = 300    # seconds (5 minutes)
 STARTUP_STAGGER = 2.0        # seconds between starting connections
 PING_INTERVAL = 60           # seconds - websockets handles ping/pong
-TOP_ORDERBOOK_LEVELS = 100   # Number of top bid/ask levels to save
+TOP_ORDERBOOK_LEVELS = 20   # Number of top bid/ask levels to save
 # ----------------------------
 
 
@@ -401,7 +401,7 @@ async def main():
         offsets = json.load(f)
 
     test_streams = [f"{sym}usdt@depth@100ms".lower() for sym in sorted(offsets.keys())]
-    test_streams = test_streams[:200]  # single stream for testing
+    test_streams = test_streams[:100]  # single stream for testing
 
     output_dir = "data"
     os.makedirs(output_dir, exist_ok=True)
